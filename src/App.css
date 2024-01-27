@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Palette coolors utilisé https://coolors.co/palette/ccd5ae-e9edc9-fefae0-faedcd-d4a373 */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -12,7 +8,20 @@ body {
   font-style: normal;
   height: 100vh;
   font-size: 14pt;
+
+  --green: #ccd5aeff;
+  --light-green: #e9edc9ff;
+  --beige: #fefae0ff;
+  --light-brown: #faedcdff;
+  --brown: #d4a373ff;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 #root {
   height: 100%;
@@ -61,19 +70,28 @@ body {
   border-radius: 75px;
   width:100%;
   height:100%;
-  -moz-box-shadow:inset 0 0 20px 5px white;
-  -webkit-box-shadow:inset 0 0 20px 5px white;
-  box-shadow:inset 0 0 20px 5px white;
+  -moz-box-shadow:inset 0 0 20px 7px white;
+  -webkit-box-shadow:inset 0 0 20px 7px white;
+  box-shadow:inset 0 0 20px 7px white;
 }
 
-.welcomeMessage {
+.welcomeList {
+  list-style-type: none;
+  font-size: 1.6em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
   text-align: center;
-  padding: 0 2px;
 }
 
 @media (min-width: 1024px) {
   #root {
     display: flex;
+  }
+
+  .main {
+    width: 100%;
   }
 
   .navbar {
@@ -85,5 +103,30 @@ body {
   .navbar > .title {
     font-size: 0.9em;
     min-width: 150px;
+  }
+
+  .welcomeSection {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1em;
+    height: 100%;
+    padding: 0 2em;
+  }
+
+  .shadowOnImg {
+    min-height: 300px;
+    aspect-ratio: 1/1;
+    flex-shrink: 1;
+  }
+
+  .welcomeList {
+    width: 50%;
+  }
+  .welcomeList > li:nth-child(2n+1) {
+    text-align: right;
+  }
+  .welcomeList > li:nth-child(2n) {
+    text-align: left;
   }
 }
