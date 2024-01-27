@@ -1,4 +1,12 @@
-# React + TypeScript + Vite
+# Macdrien.github.io
+
+This is my portfolio. A demonstration of my tech skills itself and an entrypoint for every side-project I did and do.
+
+For this portfolio, as for my others front-end projects, I use vite with ReactTS and vanilla CSS.
+
+---
+
+## Default README React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
