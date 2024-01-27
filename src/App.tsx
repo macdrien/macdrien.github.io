@@ -4,8 +4,7 @@ function App() {
   return (
     <>
       <nav className="navbar">
-        <div>Adrien BOUYSSOU</div>
-        <div>Menus</div>
+        <div className="title">Adrien BOUYSSOU</div>
       </nav>
       <div className="main">
         Hello and welcome to my portfolio !
