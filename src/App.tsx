@@ -1,25 +1,86 @@
 import './App.css'
-import profilePicture from '/adrien_bouyssou_on_innov_novembre_2017.jpg';
+import landingLogo from '/occimore_logo.png';
+
+const goToWork = (e) => {
+  e.preventDefault();
+  document.getElementById("work").scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+
+const goToPersonal = (e) => {
+  e.preventDefault();
+  document.getElementById("personal").scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+
+const goToContact = (e) => {
+  e.preventDefault();
+  document.getElementById("contact").scrollIntoView({behavior: 'smooth', block: 'start'});
+}
+
+const goToTop = (e) => {
+  e.preventDefault();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
 
 function App() {
   return (
     <>
-      <nav className="navbar">
-        <div className="title">Adrien BOUYSSOU</div>
-      </nav>
       <div className="main">
         <section className="welcomeSection">
-          <div className="shadowOnImg">
-            <img src={profilePicture} alt="alt message" className="profilePicture"/>
+          <div className="welcomeText">
+            <h1>Salut,<span>je suis <span className="myName">Adrien BOUYSSOU</span></span></h1>
+            <p className="welcomeSubtitle">Full-stack web developpeur chez Viveris Technologies</p>
+            <p className="welcomeDescription">Ingénieur logiciel depuis 3 ans, je travaille principalement avec Java et
+              ReactJS. J’ai rejoins Viveris
+              Technologies (Toulouse, France) après mon diplôme en 2021. Je travaille là-bas en tant qu’ingénieur
+              full-stack. Je travaille également toujours sur des side-projects sur mon temps libre.</p>
+            <button className="contactMe" onClick={goToWork}>Contact me</button>
           </div>
-          <ul className="welcomeList">
-            <li>Père</li>
-            <li>Mari</li>
-            <li>Développeur</li>
-            <li>Full-stack Junior</li>
-            <li>Barista</li>
-            <li>Humain</li>
-          </ul>
+          <img src={landingLogo} alt="alt message" className="landingLogo"/>
+          <div className="checkout" onClick={goToWork}>
+            <p>Regarde mon travail</p>
+            <div className="bottomArrow"/>
+          </div>
+        </section>
+        <section id="navbar">
+          <div className="name" onClick={goToTop}>Adrien BOUYSSOU</div>
+          <div className="shortName" onClick={goToTop}>AB.</div>
+          <nav>
+            <div onClick={goToWork}>Travail</div>
+            <div onClick={goToPersonal}>Personnel</div>
+            <div onClick={goToContact}>Contact</div>
+          </nav>
+        </section>
+        <section id="work" className="workSection">
+          <div className="experience">
+            <div className="illustration"></div>
+            <div className="description">
+              <p>Depuis 2021, je travaille chez Viveris Technologies. Basé à Toulouse, j'occupe le poste de développeur
+                full-stack au sein d'une équipe agile. Mon travail change au fil des jours, des semaines et des
+                sprints.</p>
+              <p>Mes compétences principales restent le développement web, en front-end avec VueJS que nous introduisons
+                dans le projet, et en back-end avec une API en Spring. Mais, il m'arrive également de travailler sur les
+                bases de données, faire du réseau ou encore de l'administration système et travailler sur la CI du
+                projet.</p>
+            </div>
+          </div>
+          <div className="experience">
+            <div className="illustration"></div>
+            <div className="description">
+              <p>De 2018 à 2021, j'ai fait une école d'ingénieur en alternance. Je travaillais pour
+                Eiffage-Energie-Systèmes et j'étudiais au sein de l'Université de Technologie de
+                Belfort-Montbéliard.<br/>
+                Je travaillais à Mulhouse, en Alsace, en tant que développeur web avec du ReactJS en framework front-end
+                et en Spring Boot pour le back-end.<br/>
+                Pour mes études, mon université était localisée à Belfort, à une demi-heure de route de Mulhouse.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="personal" className="personalSection">
+          Hello this is the personal section
+        </section>
+        <section id="contact" className="contactSection">
+          Hello this is the contact section
         </section>
       </div>
     </>
