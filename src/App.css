@@ -72,12 +72,17 @@ button:hover {
   color: var(--text-secondary);
 }
 
+section {
+  padding-top: 50px;
+}
+
 .welcomeSection {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding-top: 0;
 }
 
 .welcomeText {
@@ -92,6 +97,11 @@ h1 {
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
 .welcomeSubtitle {
@@ -139,16 +149,12 @@ h1 {
   font-weight: normal;
 }
 
-section {
-  padding-top: 45px;
-}
-
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 5px;
-  height: 40px;
+  height: 35px;
   background-color: var(--background);
   position: sticky;
   top: 0;
@@ -161,6 +167,7 @@ section {
 
 .name {
   display: none;
+  height: 0;
 }
 
 #navbar nav {
