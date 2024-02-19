@@ -44,8 +44,32 @@ button {
   box-shadow: black 0 1px 2px;
 }
 
+button:hover {
+  box-shadow: none;
+  transform: translate(1px, 1px);
+  color: var(--primary);
+  background-color: var(--text);
+  animation: button-hover 150ms ease-in-out;
+}
+
+@keyframes button-hover {
+  0% {
+    background-color: var(--primary);
+    color: var(--text);
+  }
+  100% {
+    color: var(--primary);
+    background-color: var(--text);
+    transform: translate(1px, 1px);
+  }
+}
+
 #root {
   width: 100%;
+}
+
+.highlight {
+  color: var(--text-secondary);
 }
 
 .welcomeSection {
@@ -70,10 +94,6 @@ h1 {
   margin-bottom: 0;
 }
 
-.myName {
-  color: var(--text-secondary);
-}
-
 .welcomeSubtitle {
   font-weight: normal;
 }
@@ -93,9 +113,17 @@ h1 {
 }
 
 .checkout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: fit-content;
 }
 
 .bottomArrow {
@@ -107,8 +135,12 @@ h1 {
   border-radius: 1px;
 }
 
+.checkout div:hover {
+  font-weight: normal;
+}
+
 section {
-  padding-top: 30px;
+  padding-top: 45px;
 }
 
 #navbar {
@@ -116,10 +148,11 @@ section {
   justify-content: space-between;
   align-items: center;
   padding: 0 5px;
-  height: 30px;
+  height: 40px;
   background-color: var(--background);
   position: sticky;
   top: 0;
+  border-bottom: 1px solid var(--text);
 }
 
 .shortName {
@@ -135,8 +168,18 @@ section {
   gap: 1em;
 }
 
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
 .experience {
-  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
 }
 
 .experience .illustration {
@@ -191,5 +234,31 @@ section {
     border-bottom: 4px solid var(--text);
     border-right: 4px solid var(--text);
     transform: rotate(45deg);
+  }
+
+  .experiences {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .experience {
+    width: 100%;
+  }
+
+  .experience:nth-child(2n + 1) {
+    flex-direction: row;
+  }
+
+  .experience:nth-child(2n) {
+    flex-direction: row-reverse;
+
+  }
+
+  .experience .illustration {
+    width: 40%;
+  }
+
+  .experience .description {
+    width: 60%;
   }
 }
