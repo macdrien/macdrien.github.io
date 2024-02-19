@@ -1,22 +1,31 @@
 import './App.css'
 import landingLogo from '/occimore_logo.png';
 
-const goToWork = (e) => {
+const goToWork = (e: any) => {
   e.preventDefault();
-  document.getElementById("work").scrollIntoView({behavior: 'smooth', block: 'start'});
+  const element = document.getElementById("work");
+  if (element) {
+    element.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
 }
 
-const goToPersonal = (e) => {
+const goToPersonal = (e: any) => {
   e.preventDefault();
-  document.getElementById("personal").scrollIntoView({behavior: 'smooth', block: 'start'});
+  const element = document.getElementById("personal");
+  if (element) {
+    element.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
 }
 
-const goToContact = (e) => {
+const goToContact = (e: any) => {
   e.preventDefault();
-  document.getElementById("contact").scrollIntoView({behavior: 'smooth', block: 'start'});
+  const element = document.getElementById("contact");
+  if (element) {
+    element.scrollIntoView({behavior: 'smooth', block: 'start'});
+  }
 }
 
-const goToTop = (e) => {
+const goToTop = (e: any) => {
   e.preventDefault();
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
