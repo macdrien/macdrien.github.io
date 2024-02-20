@@ -199,52 +199,24 @@ h2 {
   background-color: var(--primary);
 }
 
-@media (min-width: 1024px) {
-  body {
-    font-size: 16pt;
-  }
-
-  button {
-    padding: 10px 15px;
-    border-radius: 25px;
-  }
-
+@media (orientation: landscape) {
   .welcomeSection {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-end;
-    padding-bottom: 2em;
+    align-items: center;
   }
 
   .welcomeText {
-    width: 50%;
+    width: 60%;
     align-items: flex-start;
   }
 
-  h1 {
-    display: inline;
-    font-size: 2.5em;
-    text-align: left;
-  }
-
-  h1 span::before {
-    content: ' ';
-  }
-
   .landingLogo {
-    width: 20%;
+    width: 30%;
   }
 
-  .checkout {
-    width: 100%;
-  }
-
-  .bottomArrow {
-    height: 16px;
-    width: 16px;
-    border-bottom: 4px solid var(--text);
-    border-right: 4px solid var(--text);
-    transform: rotate(45deg);
+  h1 {
+    text-align: left;
   }
 
   .name {
@@ -254,11 +226,6 @@ h2 {
 
   .shortName {
     display: none;
-  }
-
-  .experiences {
-    padding-left: 5%;
-    padding-right: 5%;
   }
 
   .experience {
@@ -281,4 +248,53 @@ h2 {
   .experience .description {
     width: 60%;
   }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 16pt;
+  }
+
+  button {
+    padding: 10px 15px;
+    border-radius: 25px;
+  }
+
+  .welcomeSection {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-bottom: 2em;
+  }
+
+  .welcomeText {
+    width: 50%;
+  }
+
+  h1 {
+    display: inline;
+    font-size: 2.5em;
+  }
+
+  h1 span::before {
+    content: ' ';
+  }
+
+  .checkout {
+    width: 100%;
+  }
+
+  .bottomArrow {
+    height: 16px;
+    width: 16px;
+    border-bottom: 4px solid var(--text);
+    border-right: 4px solid var(--text);
+    transform: rotate(45deg);
+  }
+
+  .experiences {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
 }

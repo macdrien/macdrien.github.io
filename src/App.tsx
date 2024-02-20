@@ -97,17 +97,13 @@ function App() {
           <div className="experiences">
             <div className='experience'>
               <div className='illustration'></div>
-              <p className='description'>L'obtention d'un diplôme d'ingénieur en France est conditionnée, entre autres,
-                par le parcours international.
-                A savoir, passer douzes semaines à l'étranger et y avoir une expérience définie.
-                Pour un étudiant en cursus initial, cette expérience se concrétise souvent par un semestre d'étude à
-                l'étranger.
-                Mais, étant alternant, j'ai eu accès à un autre type de parcours international: douze semaines de
-                travail à l'étranger.<br/>
-                Le premier mois pris la forme d'un stage linguistique comprenant une semaine de cours en Angleterre,
-                dans le Devon plus précisément. S'en suivi trois semaines de travail dans une société locale.<br/>
-                A la fin de ce premier mois, j'ai eu l'opportunité de retourner dans cette même entreprise pour faire
-                les deux mois de travail qu'il me restait à faire.
+              <p className='description'>L'obtention d'un diplôme d'ingénieur nécessite une expérience de douze semaines
+                à l'international.<br/>
+                Par conséquent, je suis parti travailler trois mois, sur l'été 2019, chez <span className='highlight'>Ace Printwear</span> une,
+                petite entreprise à <span
+                  className='highlight'>Torquay</span>, Devon,
+                UK. Cette expérience m'a permi d'améliorer considérablement mon niveau en anglais jusqu'au B2 nécessaire
+                à l'obtention du diplôme.
               </p>
             </div>
           </div>
