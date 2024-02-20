@@ -167,7 +167,6 @@ h2 {
 
 .name {
   display: none;
-  height: 0;
 }
 
 #navbar nav {
@@ -241,6 +240,15 @@ h2 {
     border-bottom: 4px solid var(--text);
     border-right: 4px solid var(--text);
     transform: rotate(45deg);
+  }
+
+  .name {
+    display: block;
+    font-size: 1.2em;
+  }
+
+  .shortName {
+    display: none;
   }
 
   .experiences {
