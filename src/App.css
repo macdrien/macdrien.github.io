@@ -149,6 +149,11 @@ h2 {
   font-weight: normal;
 }
 
+.checkout div:hover .bottomArrow {
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+}
+
 #navbar {
   display: flex;
   justify-content: space-between;
