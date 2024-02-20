@@ -68,27 +68,15 @@ button:hover {
   width: 100%;
 }
 
-.highlight {
+.highlight,
+.markdown strong,
+.markdown em {
+  font-style: inherit;
   color: var(--text-secondary);
 }
 
 section {
   padding-top: 50px;
-}
-
-.welcomeSection {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 0;
-}
-
-.welcomeText {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 h1 {
@@ -104,16 +92,26 @@ h2 {
   margin-bottom: 1em;
 }
 
+.welcomeSection {
+  padding-top: 0;
+  height: 100vh;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  height: 93vh;
+}
+
+.presentationText p {
+  margin-bottom: 1em;
+}
+
 .welcomeSubtitle {
   font-weight: normal;
-}
-
-.welcomeDescription {
-  margin: 1em 0;
-}
-
-.contactMe {
-  align-self: flex-start;
 }
 
 .landingLogo {
@@ -123,10 +121,10 @@ h2 {
 }
 
 .checkout {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 7vh;
 }
 
 .checkout > div {
@@ -200,23 +198,25 @@ h2 {
 }
 
 @media (orientation: landscape) {
-  .welcomeSection {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+  h1 {
+    text-align: left;
   }
 
-  .welcomeText {
-    width: 60%;
-    align-items: flex-start;
+  .welcomeSection {
+    flex-direction: row;
+  }
+
+  .presentation {
+    flex-direction: row;
+    height: 90vh;
   }
 
   .landingLogo {
     width: 30%;
   }
 
-  h1 {
-    text-align: left;
+  .checkout {
+    height: 10vh;
   }
 
   .name {
@@ -245,7 +245,7 @@ h2 {
     width: 40%;
   }
 
-  .experience .description {
+  .experience .markdown {
     width: 60%;
   }
 }
@@ -260,14 +260,11 @@ h2 {
     border-radius: 25px;
   }
 
-  .welcomeSection {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    padding-bottom: 2em;
+  .presentation {
+    justify-content: space-evenly;
   }
 
-  .welcomeText {
+  .presentationText {
     width: 50%;
   }
 
