@@ -1,25 +1,10 @@
 import './App.css'
 import landingLogo from '/occimore_logo.png';
+import experiences from './experiences.json';
+import Markdown from "react-markdown";
 
-const goToWork = (e: any) => {
-  e.preventDefault();
-  const element = document.getElementById("work");
-  if (element) {
-    element.scrollIntoView({behavior: 'smooth', block: 'start'});
-  }
-}
-
-const goToPersonal = (e: any) => {
-  e.preventDefault();
-  const element = document.getElementById("personal");
-  if (element) {
-    element.scrollIntoView({behavior: 'smooth', block: 'start'});
-  }
-}
-
-const goToContact = (e: any) => {
-  e.preventDefault();
-  const element = document.getElementById("contact");
+const goToId = (id: string) => {
+  const element = document.getElementById(id);
   if (element) {
     element.scrollIntoView({behavior: 'smooth', block: 'start'});
   }
@@ -35,18 +20,21 @@ function App() {
     <>
       <div className="main">
         <section className="welcomeSection">
-          <div className="welcomeText">
-            <h1>Salut,<span>je suis <span className="highlight">Adrien BOUYSSOU</span></span></h1>
-            <p className="welcomeSubtitle">Full-stack web developpeur chez Viveris Technologies</p>
-            <p className="welcomeDescription">Ingénieur logiciel depuis 3 ans, je travaille principalement avec Java et
-              ReactJS. J’ai rejoint Viveris Technologies (Toulouse, France) après mon diplôme en 2021.
-              J'y travaille comme ingénieur full-stack.
-              Je travaille également sur des side-projects sur mon temps libre.</p>
-            <button className="contactMe" onClick={goToWork}>Contactez-moi</button>
+          <div className="presentation">
+            <div className="presentationText">
+              <h1>Salut,<span>je suis <span className="highlight">Adrien BOUYSSOU</span></span></h1>
+              <p className="welcomeSubtitle">Full-stack web developpeur chez Viveris Technologies</p>
+              <p className="welcomeDescription">Ingénieur logiciel depuis 3 ans, je travaille principalement avec Java
+                et
+                ReactJS. J’ai rejoint Viveris Technologies (Toulouse, France) après mon diplôme en 2021.
+                J'y travaille comme ingénieur full-stack.
+                Je travaille également sur des side-projects sur mon temps libre.</p>
+              <button className="contactMe" onClick={e => goToId("contact")}>Contactez-moi</button>
+            </div>
+            <img src={landingLogo} alt="alt message" className="landingLogo"/>
           </div>
-          <img src={landingLogo} alt="alt message" className="landingLogo"/>
           <div className="checkout">
-            <div onClick={goToWork}>
+            <div onClick={e => goToId(experiences[0].id)}>
               <p>Regarde mon travail</p>
               <div className="bottomArrow"/>
             </div>
@@ -56,59 +44,23 @@ function App() {
           <div className="name" onClick={goToTop}>Adrien BOUYSSOU</div>
           <div className="shortName" onClick={goToTop}>AB.</div>
           <nav>
-            <div onClick={goToWork}>Travail</div>
-            <div onClick={goToPersonal}>Personnel</div>
-            <div onClick={goToContact}>Contact</div>
+            {experiences.map(category => <div key={category.id}
+                                              onClick={e => goToId(category.id)}>{category.navTitle}</div>)}
+            <div onClick={e => goToId("contact")}>Contact</div>
           </nav>
         </section>
-        <section id="work" className="workSection">
-          <h2>Mes expériences professionnelles</h2>
+
+        {experiences.map(category => <section id={category.id} key={category.id}>
+          <h2>{category.title}</h2>
           <div className="experiences">
-            <div className="experience">
+            {category.experiences.map((experience, index) => <div className="experience" key={index}>
               <div className="illustration"></div>
-              <div className="description">
-                <p>Depuis 2021, je travaille chez <span className="highlight">Viveris Technologies</span>. Basé à
-                  Toulouse, j'occupe le poste de développeur <span className="highlight">full-stack</span> au sein d'une
-                  équipe agile. Mon travail change au fil des jours, des semaines et des sprints.</p>
-                <p>Mes compétences principales restent le développement web, en front-end avec <span
-                  className='highlight'>VueJS</span> que nous introduisons
-                  dans le projet, et en back-end avec une API principale en <span className="highlight">Spring</span>.
-                  Mais, il m'arrive également de travailler sur les bases de données,
-                  faire du réseau ou encore de l'administration système et travailler sur la CI du projet.</p>
-              </div>
-            </div>
-            <div className="experience">
-              <div className="illustration"></div>
-              <div className="description">
-                <p>De 2018 à 2021, j'ai fait une école d'ingénieur en alternance. Je travaillais chez <span
-                  className="highlight">Eiffage-Energie-Systèmes</span> et j'étudiais au sein de l'<span
-                  className="highlight">UTBM</span> (Université de Technologie de Belfort-Montbéliard).<br/>
-                  Je travaillais à Mulhouse, en Alsace, en tant que développeur web avec du <span
-                    className="highlight">ReactJS</span> en framework front-end
-                  et en <span className="highlight">Spring Boot</span> pour le back-end.<br/>
-                  Pour mes études, mon université était localisée à Belfort, à une demi-heure de route de Mulhouse.
-                </p>
-              </div>
-            </div>
+              <Markdown className="markdown">{experience.text}</Markdown>
+            </div>)}
           </div>
-        </section>
-        <section id="personal" className="personalSection">
-          <h2>Mes expériences personnelles</h2>
-          <div className="experiences">
-            <div className='experience'>
-              <div className='illustration'></div>
-              <p className='description'>L'obtention d'un diplôme d'ingénieur nécessite une expérience de douze semaines
-                à l'international.<br/>
-                Par conséquent, je suis parti travailler trois mois, sur l'été 2019, chez <span className='highlight'>Ace Printwear</span> une,
-                petite entreprise à <span
-                  className='highlight'>Torquay</span>, Devon,
-                UK. Cette expérience m'a permi d'améliorer considérablement mon niveau en anglais jusqu'au B2 nécessaire
-                à l'obtention du diplôme.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section id="contact" className="contactSection">
+        </section>)}
+
+        <section id="contact">
           <h2>Contact</h2>
           <p>Bientôt disponible</p>
         </section>
