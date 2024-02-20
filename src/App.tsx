@@ -29,12 +29,12 @@ function App() {
                 ReactJS. J’ai rejoint Viveris Technologies (Toulouse, France) après mon diplôme en 2021.
                 J'y travaille comme ingénieur full-stack.
                 Je travaille également sur des side-projects sur mon temps libre.</p>
-              <button className="contactMe" onClick={e => goToId("contact")}>Contactez-moi</button>
+              <button className="contactMe" onClick={goToId("contact")}>Contactez-moi</button>
             </div>
             <img src={landingLogo} alt="alt message" className="landingLogo"/>
           </div>
           <div className="checkout">
-            <div onClick={e => goToId(experiences[0].id)}>
+            <div onClick={goToId(experiences[0].id)}>
               <p>Regarde mon travail</p>
               <div className="bottomArrow"/>
             </div>
@@ -45,8 +45,8 @@ function App() {
           <div className="shortName" onClick={goToTop}>AB.</div>
           <nav>
             {experiences.map(category => <div key={category.id}
-                                              onClick={e => goToId(category.id)}>{category.navTitle}</div>)}
-            <div onClick={e => goToId("contact")}>Contact</div>
+                                              onClick={goToId(category.id)}>{category.navTitle}</div>)}
+            <div onClick={goToId("contact")}>Contact</div>
           </nav>
         </section>
 
