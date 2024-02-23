@@ -21,9 +21,11 @@
     "navTitle": "Personnel",
     "experiences": [
       {
+        "image": "ace_printwear.jpg",
         "text": "L'obtention d'un diplôme d'ingénieur nécessite une expérience de douze semaines à l'international. Par conséquent, je suis parti travailler trois mois, sur l'été 2019, chez *Ace Printwear* une, petite entreprise à *Torquay*, Devon, UK. Cette expérience m'a permi d'améliorer considérablement mon niveau en anglais jusqu'au B2 nécessaire à l'obtention du diplôme."
       },
       {
+        "image": "adrien_bouyssou_on_innov_novembre_2017.jpg",
         "text": "En novembre 2017, j'ai participé au concours organisé dans le cadre du salon *On Innov'* de Onet-Le-Chateau, à côté de Rodez. Avec l'équipe KAVAM, nous sommes allés présenter le concept de notre jeu mobile sur le thème de l'économie d'énergie. Nous avons été très heureux d'obtenir la première place lors de ce concours."
       }
     ]

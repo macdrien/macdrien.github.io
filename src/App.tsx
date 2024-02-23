@@ -1,5 +1,5 @@
 import './App.css'
-import landingLogo from '/occimore_logo.png';
+import landingLogo from '/images/occimore_logo.png';
 import experiences from './experiences.json';
 import Markdown from "react-markdown";
 
@@ -55,7 +55,7 @@ function App() {
           <h2>{category.title}</h2>
           <div className="experiences">
             {category.experiences.map((experience, index) => <div className="experience" key={index}>
-              <div className="illustration"></div>
+              <div className="illustration" style={{backgroundImage: `url("/images/${experience.image}")`}}></div>
               <Markdown className="markdown">{experience.text}</Markdown>
             </div>)}
           </div>

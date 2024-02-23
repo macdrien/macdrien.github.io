@@ -194,7 +194,8 @@ h2 {
 .experience .illustration {
   width: 90%;
   aspect-ratio: 16/9;
-  background-color: var(--primary);
+  /*background-color: var(--primary);*/
+  background-size: cover;
 }
 
 @media (orientation: landscape) {
