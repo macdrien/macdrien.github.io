@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 
 :root {
@@ -11,7 +11,7 @@ body {
   font-family: "Lalezar", "Roboto", sans-serif;
   font-style: normal;
   height: 100vh;
-  font-size: 10pt;
+  font-size: 14pt;
   background-color: var(--background);
   color: var(--text);
   padding: 0 5px;
@@ -71,7 +71,7 @@ section {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -242,10 +242,6 @@ h2 {
 }
 
 @media (min-width: 1024px) {
-  body {
-    font-size: 16pt;
-  }
-
   button {
     padding: 10px 15px;
     border-radius: 25px;
