@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
-
-/* Palette coolors utilisé https://coolors.co/d3e4ee-eef36a-313949-b02e0c */
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 
 :root {
-  --background: #D3E4EE;
-  --primary: #EEF36A;
-  --text: #313949;
-  --text-secondary: #B02E0C;
+  --background: #FFFDF4;
+  --primary: #8D5A97;
+  --text: #0B132B;
 }
 
 body {
-  font-family: "Fuzzy Bubbles", "Roboto", sans-serif;
-  font-weight: bold;
+  font-family: "Lalezar", "Roboto", sans-serif;
   font-style: normal;
   height: 100vh;
   font-size: 10pt;
@@ -38,28 +34,22 @@ a {
 
 button {
   background-color: var(--primary);
+  color: var(--background);
   border: none;
   padding: 10px;
   border-radius: 20px;
-  box-shadow: black 0 1px 2px;
+  box-shadow: var(--text) 0 2px 4px;
 }
 
 button:hover {
   box-shadow: none;
   transform: translate(1px, 1px);
-  color: var(--primary);
-  background-color: var(--text);
-  animation: button-hover 150ms ease-in-out;
+  animation: button-hover 500ms ease-in-out;
 }
 
 @keyframes button-hover {
-  0% {
-    background-color: var(--primary);
-    color: var(--text);
-  }
   100% {
-    color: var(--primary);
-    background-color: var(--text);
+    box-shadow: none;
     transform: translate(1px, 1px);
   }
 }
@@ -72,7 +62,8 @@ button:hover {
 .markdown strong,
 .markdown em {
   font-style: inherit;
-  color: var(--text-secondary);
+  font-weight: bold;
+  color: var(--primary);
 }
 
 section {
@@ -144,12 +135,11 @@ h2 {
 }
 
 .checkout div:hover {
-  font-weight: normal;
+  transform: translate(1px, 1px);
 }
 
 .checkout div:hover .bottomArrow {
-  border-right-width: 1px;
-  border-bottom-width: 1px;
+  transform: rotate(45deg);
 }
 
 #navbar {
@@ -194,7 +184,7 @@ h2 {
 .experience .illustration {
   width: 90%;
   aspect-ratio: 16/9;
-  /*background-color: var(--primary);*/
+  background-color: var(--primary);
   background-size: cover;
 }
 
