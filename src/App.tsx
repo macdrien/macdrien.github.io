@@ -55,7 +55,7 @@ function App() {
           <h2>{category.title}</h2>
           <div className="experiences">
             {category.experiences.map((experience, index) => <div className="experience" key={index}>
-              <div className="illustration" style={{backgroundImage: `url("/images/${experience.image}")`}}></div>
+              <div className="illustration" style={experience.image ? {backgroundImage: `url("/images/${experience.image}")`} : undefined}></div>
               <Markdown className="markdown">{experience.text}</Markdown>
             </div>)}
           </div>
