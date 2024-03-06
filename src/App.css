@@ -79,7 +79,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom: 1em;
 }
 
@@ -102,7 +102,9 @@ h2 {
 }
 
 .welcomeSubtitle {
-  font-weight: normal;
+  font-size: 0.8em;
+  opacity: 0.8;
+  text-align: center;
 }
 
 .landingLogo {
@@ -197,6 +199,10 @@ h2 {
     flex-direction: row;
   }
 
+  .welcomeSubtitle {
+    text-align: left;
+  }
+
   .presentation {
     flex-direction: row;
     height: 90vh;
@@ -242,6 +248,10 @@ h2 {
 }
 
 @media (min-width: 1024px) {
+  body {
+    font-size: 16pt;
+  }
+
   button {
     padding: 10px 15px;
     border-radius: 25px;
@@ -262,6 +272,10 @@ h2 {
 
   h1 span::before {
     content: ' ';
+  }
+
+  .welcomeSubtitle {
+    font-size: 1.2em;
   }
 
   .checkout {
