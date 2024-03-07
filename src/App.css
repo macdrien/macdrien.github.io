@@ -277,6 +277,15 @@ h2 {
     border-radius: 25px;
   }
 
+  section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .welcomeSection {
+    padding: 0;
+  }
+  
   .presentation {
     justify-content: space-evenly;
   }
@@ -308,11 +317,6 @@ h2 {
     border-bottom: 4px solid var(--text);
     border-right: 4px solid var(--text);
     transform: rotate(45deg);
-  }
-
-  .experiences {
-    padding-left: 5%;
-    padding-right: 5%;
   }
 
 }
