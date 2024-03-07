@@ -3,7 +3,7 @@
 
 :root {
   --background: #FFFDF4;
-  --primary: #8D5A97;
+  --primary: #f8b122;
   --text: #0B132B;
 }
 
@@ -34,7 +34,7 @@ a {
 
 button {
   background-color: var(--primary);
-  color: var(--background);
+  color: var(--text);
   border: none;
   padding: 10px;
   border-radius: 20px;
@@ -42,13 +42,22 @@ button {
 }
 
 button:hover {
+  color: var(--primary);
+  background-color: var(--text);
   box-shadow: none;
   transform: translate(1px, 1px);
-  animation: button-hover 500ms ease-in-out;
+  animation: button-hover 200ms ease-in-out;
 }
 
 @keyframes button-hover {
+  0% {
+    background-color: var(--primary);
+    color: var(--text);
+    box-shadow: var(--text) 0 2px 4px;
+  }
   100% {
+    color: var(--primary);
+    background-color: var(--text);
     box-shadow: none;
     transform: translate(1px, 1px);
   }
