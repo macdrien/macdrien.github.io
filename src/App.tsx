@@ -35,19 +35,19 @@ function App() {
             <img src={landingLogo} alt="alt message" className="landingLogo"/>
           </div>
           <div className="checkout">
-            <div onClick={e => goToId(e, experiences[0].id)}>
+            <div className='clickable' onClick={e => goToId(e, experiences[0].id)}>
               <p>Regarde mon travail</p>
               <div className="bottomArrow"/>
             </div>
           </div>
         </section>
         <section id="navbar">
-          <div className="name" onClick={goToTop}>Adrien BOUYSSOU</div>
-          <div className="shortName" onClick={goToTop}>AB.</div>
+          <div className="name clickable" onClick={goToTop}>Adrien BOUYSSOU</div>
+          <div className="shortName clickable" onClick={goToTop}>AB.</div>
           <nav>
-            {experiences.map(category => <div key={category.id}
+            {experiences.map(category => <div key={category.id} className='clickable'
                                               onClick={e => goToId(e, category.id)}>{category.navTitle}</div>)}
-            <div onClick={e => goToId(e, "contact")}>Contact</div>
+            <div className='clickable' onClick={e => goToId(e, "contact")}>Contact</div>
           </nav>
         </section>
 
