@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
 
+/* colors from https://materialui.co/colors */
+
 :root {
-  --background: #FFFDF4;
-  --primary: #f8b122;
-  --text: #0B132B;
+  --background: #FFFDE7; /* yellow 50 */
+  --primary: #EF6C00; /* orange 800 */
+  --primary-alt: #FFB74D; /* orange 300 */
+  --text: #263238; /* blue grey 900 */
 }
 
 body {
