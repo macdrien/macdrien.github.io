@@ -126,7 +126,7 @@ h2 {
 .landingLogo {
   width: 80%;
   border-radius: 100%;
-  box-shadow: black 0 0 20px;
+  box-shadow: var(--text) 0 0 20px;
 }
 
 .checkout {
@@ -204,6 +204,8 @@ h2 {
   aspect-ratio: 16/9;
   background-color: var(--primary);
   background-size: cover;
+  border-radius: 1em;
+  box-shadow: var(--text) 0 0 5px;
 }
 
 @media (orientation: landscape) {
