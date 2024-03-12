@@ -5,15 +5,15 @@
     "navTitle": "Travail",
     "experiences": [
       {
-        "image": "",
+        "image": "logo.svg",
         "text": "Depuis 2021, je travaille chez *Viveris Technologies*. Basé à Toulouse, j'occupe le poste de développeur *full-stack* au sein d'une équipe agile. Mon travail change au fil des jours, des semaines et des sprints.  Mes compétences principales restent le développement web, en front-end avec *VueJS* que nous introduisons dans le projet, et en back-end avec une API principale en *Spring*. Mais, il m'arrive également de travailler sur les bases de données, faire du réseau ou encore de l'administration système et travailler sur la CI du projet."
       },
       {
-        "image": "",
+        "image": "mulhouse.jpg",
         "text": "De 2018 à 2021, j'ai fait une école d'ingénieur en alternance. Je travaillais chez *Eiffage-Energie-Systèmes* et j'étudiais au sein de l'*UTBM* (Université de Technologie de Belfort-Montbéliard).  Je travaillais à Mulhouse, en Alsace, en tant que développeur web avec du *ReactJS* en framework front-end et en *Spring Boot* pour le back-end.  Pour mes études, mon université était localisée à Belfort, à une demi-heure de route de Mulhouse."
       },
       {
-        "image": "",
+        "image": "iut_rodez.jpg",
         "text": "J'ai commencé mes études supérieures par un DUT en Informatique. J'ai passé ce diplôme de 2016 à 2018 à l'IUT de Rodez (Université Toulouse 1 Capitole). Cela m'a permi de m'initier correctement à l'informatique, notamment en *Java*."
       }
     ]
