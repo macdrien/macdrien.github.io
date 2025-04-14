@@ -27,7 +27,7 @@ function App() {
               <p className="welcomeSubtitle">Full-stack web developpeur chez Viveris Technologies</p>
               <p className="welcomeDescription">Ingénieur logiciel depuis 3 ans, je travaille principalement avec Java
                 et
-                ReactJS. J’ai rejoint Viveris Technologies (Toulouse, France) après mon diplôme en 2021.
+                JavaScript. J’ai rejoint Viveris Technologies (Toulouse, France) après mon diplôme en 2021.
                 J'y travaille comme ingénieur full-stack.
                 Je travaille également sur des side-projects sur mon temps libre.</p>
               <button className="contactMe" onClick={e => goToId(e, "contact")}>Contactez-moi</button>
