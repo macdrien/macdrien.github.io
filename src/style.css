@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 
-/* colors from https://materialui.co/colors */
-
+/* Color palette https://coolors.co/ffffff-548c2f-596475-000100-4c6085 */
 :root {
-  --background: #FFFDE7; /* yellow 50 */
-  --primary: #EF6C00; /* orange 800 */
-  --primary-alt: #FFB74D; /* orange 300 */
-  --text: #263238; /* blue grey 900 */
+  --primary: #548C2F;
+  --text: #000100;
+  --alt: #FFFFFF;
 }
 
 body {
@@ -15,7 +13,7 @@ body {
   font-style: normal;
   height: 100vh;
   font-size: 12pt;
-  background-color: var(--background);
+  background-color: var(--alt);
   color: var(--text);
   padding: 0 5px;
 }
@@ -31,25 +29,30 @@ body {
   text-decoration: inherit;
 }
 
+.main {
+ padding-bottom: 10px;
+}
+
 a {
   text-decoration: none;
 }
 
 button {
+  font-weight: bold;
   background-color: var(--primary);
   color: var(--text);
-  border: none;
+  border: 2px solid var(--primary);
   padding: 10px;
   border-radius: 20px;
   box-shadow: var(--text) 0 2px 4px;
 }
 
 button:hover {
+  background-color: var(--alt);
   color: var(--primary);
-  background-color: var(--text);
   box-shadow: none;
   transform: translate(1px, 1px);
-  animation: button-hover 200ms ease-in-out;
+  animation: button-hover 100ms ease-in-out;
 }
 
 @keyframes button-hover {
@@ -60,7 +63,7 @@ button:hover {
   }
   100% {
     color: var(--primary);
-    background-color: var(--text);
+    background-color: var(--alt);
     box-shadow: none;
     transform: translate(1px, 1px);
   }
@@ -68,10 +71,6 @@ button:hover {
 
 button:hover, .clickable:hover {
   cursor: pointer;
-}
-
-#root {
-  width: 100%;
 }
 
 .highlight,
@@ -124,9 +123,9 @@ h2 {
 }
 
 .landingLogo {
-  width: 80%;
+  width: 70%;
   border-radius: 100%;
-  box-shadow: var(--text) 0 0 20px;
+  box-shadow: var(--text) 0 0 5px;
 }
 
 .checkout {
@@ -169,8 +168,8 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 0 5px;
-  height: 35px;
-  background-color: var(--background);
+  height: 40px;
+  background-color: var(--alt);
   position: sticky;
   top: 0;
   border-bottom: 1px solid var(--text);
@@ -179,6 +178,10 @@ h2 {
 #navbar nav {
   display: flex;
   gap: 1em;
+}
+
+#navbar div:hover {
+  text-decoration: underline;
 }
 
 .experiences {
@@ -202,6 +205,12 @@ h2 {
   background-size: cover;
   border-radius: 1em;
   box-shadow: var(--text) 0 0 5px;
+}
+
+@media (min-width: 425px) {
+  .landingLogo {
+    width: 50%;
+  }
 }
 
 @media (orientation: landscape) {
@@ -232,6 +241,11 @@ h2 {
 
   .checkout {
     height: 10vh;
+  }
+
+  #navbar {
+    border-bottom: none;
+    height: 50px;
   }
 
   .experience {
@@ -280,7 +294,7 @@ h2 {
   }
 
   .presentationText {
-    width: 50%;
+    width: 60%;
   }
 
   h1 {
