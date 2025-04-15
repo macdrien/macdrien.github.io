@@ -18,6 +18,21 @@
       }
     ]
   },
+  "projects": {
+    "title": "Mes projets personnels",
+    "id": "projects",
+    "navTitle": "Projets",
+    "experiences": [
+      {
+        "image": "link.svg",
+        "text": "Mon **portfolio** est l'un de mes projets. Initialement réalisé en ReactJS, je l'ai refait, à l'identique, en **JavaScript** vanilla. Ce changement me permet de me rapprocher au plus des technologies pures. Cela me permet de faire plus rapidement des tests et de nouvelles features sur un projet qui ne demande pas en soit l'utilisation d'un framework."
+      },
+      {
+        "image": "link.svg",
+        "text": "C'est suite à une question technique que je me posais, que j'en suis venu à développer à un POC technique, le [Tournament-Manager](https://macdrien.github.io/tournament-manager-frontend). L'objectif est de permettre la génération d'un arbre de matchs pour des tournois. J'ai un peu complété ce projet pour y ajouter un formulaire de création de tournois en définissant le nombre d'équipes et de joueurs. L'affichage du tournois permet de voir le match en cours et de présenter le.s gagnant.e.s. J'ai également profité de ces pages pour tester un système d'affichage avec le choix d'un thème clair et un sombre."
+      }
+    ]
+  },
   "personal": {
     "title": "Mes expériences personnelles",
     "id": "personal",
