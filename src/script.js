@@ -45,7 +45,7 @@ function displayExperiences(experiences) {
 
   // Load experience items
   for (let experience of experiences.experiences) {
-    const experienceItem = document.createElement("div");
+    const experienceItem = document.createElement("article");
     experienceItem.className = "experience";
 
     const experienceImage = document.createElement("img");
@@ -53,7 +53,7 @@ function displayExperiences(experiences) {
     experienceImage.src = `./resources/images/${experience.image}`;
     experienceItem.appendChild(experienceImage);
 
-    const experienceDetails = document.createElement("div");
+    const experienceDetails = document.createElement("p");
     experienceDetails.className = "markdown";
     experienceDetails.innerHTML = DOMPurify.sanitize(
       marked.parse(experience.text)
