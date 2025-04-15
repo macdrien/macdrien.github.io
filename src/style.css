@@ -33,8 +33,13 @@ body {
  padding-bottom: 10px;
 }
 
-a {
+a, a:visited {
   text-decoration: none;
+  color: var(--primary);
+}
+
+a:hover {
+  color: var(--text);
 }
 
 button {

@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => {
       displayExperiences(data.work);
+      displayExperiences(data.projects);
       displayExperiences(data.personal);
 
       const contactLanding = document.getElementById("contact-landing");
