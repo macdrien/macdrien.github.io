@@ -160,6 +160,10 @@ h2 {
   transform: rotate(45deg);
 }
 
+.name {
+  font-size: 1.2em;
+}
+
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -170,14 +174,6 @@ h2 {
   position: sticky;
   top: 0;
   border-bottom: 1px solid var(--text);
-}
-
-.shortName {
-  font-size: 1.2em;
-}
-
-.name {
-  display: none;
 }
 
 #navbar nav {
@@ -236,15 +232,6 @@ h2 {
 
   .checkout {
     height: 10vh;
-  }
-
-  .name {
-    display: block;
-    font-size: 1.2em;
-  }
-
-  .shortName {
-    display: none;
   }
 
   .experience {
