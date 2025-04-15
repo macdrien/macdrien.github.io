@@ -1,5 +1,5 @@
-[
-  {
+{
+  "work": {
     "title": "Mes expériences professionnelles",
     "id": "work",
     "navTitle": "Travail",
@@ -18,7 +18,7 @@
       }
     ]
   },
-  {
+  "personal": {
     "title": "Mes expériences personnelles",
     "id": "personal",
     "navTitle": "Personnel",
@@ -33,4 +33,4 @@
       }
     ]
   }
-]
+}
