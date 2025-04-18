@@ -2,7 +2,7 @@ import { marked } from "https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js";
 import DOMPurify from "https://cdn.jsdelivr.net/npm/dompurify@2.5.8/dist/purify.es.min.js";
 
 const resizeObserver = new ResizeObserver((_entries) => updateNavNameText());
-resizeObserver.observe(document.documentElement);
+resizeObserver.observe(document.body);
 
 document.addEventListener("DOMContentLoaded", () => {
   fetch("./resources/experiences.json")
@@ -76,5 +76,5 @@ function goToId(id) {
 function updateNavNameText() {
   const navName = document.getElementsByClassName("name")[0];
   navName.innerText =
-    document.documentElement.clientWidth > 425 ? "Adrien BOUYSSOU" : "A.B.";
+    document.documentElement.clientWidth > 500 ? "Adrien BOUYSSOU" : "A.B.";
 }
