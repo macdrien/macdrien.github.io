@@ -27,6 +27,12 @@
     "navTitle": "Projets",
     "experiences": [
       {
+        "title": "GitHub",
+        "link": "https://github.com/macdrien",
+        "image": "github-brands-solid.svg",
+        "text": "Lorsque je développe un projet personnel, je le versionne systématiquement vie l'incontournable **Git** sur **GitHub**. Cela me permet de le sauvegarder, de retrouver tous mes projets partour, et surtout, comme c'est le cas pour ce portfolio, de déployer mes projets statiques sur GitHub Pages facilement grâce aux GitHub Actions."
+      },
+      {
         "title": "Portfolio",
         "link": "https://macdrien.github.io",
         "image": "link.svg",
