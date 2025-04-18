@@ -5,14 +5,17 @@
     "navTitle": "Travail",
     "experiences": [
       {
+        "title": "Viveris Technologies",
         "image": "logo.svg",
         "text": "Depuis 2021, je travaille chez *Viveris Technologies*. Basé à Toulouse, j'occupe le poste de développeur au sein d'une équipe agile. Mon travail change au fil des jours, des semaines et des sprints.  Mes compétences principales restent le développement web, en back-end avec une API principale en *Spring*, et en front-end avec *VueJS* que nous introduisons dans le projet. Mais, il m'arrive également de travailler sur les bases de données, faire du réseau ou encore de l'administration système et travailler sur la CI du projet."
       },
       {
+        "title": "Alternance à Eiffage Energie Systèmes",
         "image": "mulhouse.jpg",
         "text": "De 2018 à 2021, j'ai fait une école d'ingénieur en alternance. Je travaillais chez *Eiffage-Energie-Systèmes* et j'étudiais au sein de l'*UTBM* (Université de Technologie de Belfort-Montbéliard).  Je travaillais à Mulhouse, en Alsace, en tant que développeur web avec du *Spring Boot* pour le back-end et en *ReactJS* en framework front-end.  Pour mes études, mon université était localisée à Belfort, proche de Mulhouse."
       },
       {
+        "title": "DUT Informatique",
         "image": "iut_rodez.jpg",
         "text": "J'ai commencé mes études supérieures par un DUT en Informatique. J'ai passé ce diplôme de 2016 à 2018 à l'IUT de Rodez (Université Toulouse 1 Capitole). Cela m'a permi de m'initier correctement à l'informatique, notamment en *Java*. Cette formation m'a également apporté beaucoup de bases solides, notamment en base de données relationnelles."
       }
@@ -24,12 +27,16 @@
     "navTitle": "Projets",
     "experiences": [
       {
+        "title": "Portfolio",
+        "link": "https://macdrien.github.io",
         "image": "link.svg",
         "text": "Mon **portfolio** est l'un de mes projets. Initialement réalisé en ReactJS, je l'ai refait, à l'identique, en **JavaScript** vanilla. Ce changement me permet de me rapprocher au plus des technologies pures afin d'utiliser les outils qui correspondent au mieux à chaque projet."
       },
       {
+        "title": "Tournament Manager",
+        "link": "https://macdrien.github.io/tounrament-manager-frontend",
         "image": "link.svg",
-        "text": "Le [Tournament-Manager](https://macdrien.github.io/tournament-manager-frontend) est un Proof Of Concept que j'ai développé sous la forme d'un exercice personnel. L'objectif est de permettre la génération d'un arbre de matchs pour des tournois. J'ai complété ce projet pour y ajouter un formulaire de création de tournois en définissant le nombre d'équipes et de joueurs et organisant les matchs aléatoirement. L'affichage du tournois permet de voir le match en cours et de présenter le.s gagnant.e.s. J'ai également profité de ces pages pour tester un système d'affichage avec le choix d'un thème clair et un sombre. Je considère sa v1 terminée, mais je garde ce projet de côté pour y ajouter de nombreuses foncitonnalités, la persistence de données en tête."
+        "text": "Le **[Tournament-Manager](https://macdrien.github.io/tournament-manager-frontend)** est un Proof Of Concept que j'ai développé sous la forme d'un exercice personnel. L'objectif est de permettre la génération d'un arbre de matchs pour des tournois. J'ai complété ce projet pour y ajouter un formulaire de création de tournois en définissant le nombre d'équipes et de joueurs et organisant les matchs aléatoirement. L'affichage du tournois permet de voir le match en cours et de présenter le.s gagnant.e.s. J'ai également profité de ces pages pour tester un système d'affichage avec le choix d'un thème clair et un sombre. Je considère sa v1 terminée, mais je garde ce projet de côté pour y ajouter de nombreuses foncitonnalités, la persistence de données en tête."
       }
     ]
   },
@@ -39,10 +46,12 @@
     "navTitle": "Personnel",
     "experiences": [
       {
+        "title": "Immersion en Angleterre",
         "image": "ace_printwear.jpg",
         "text": "L'obtention d'un diplôme d'ingénieur nécessite une expérience de douze semaines à l'international. Par conséquent, je suis parti travailler trois mois, sur l'été 2019, chez *Ace Printwear* une, petite société à *Torquay* (Devon, UK), qui personnalise des textiles grâce à du flocage, principalement pour les nombreux touristes de l'English Riviera et les entreprises locales. Cette expérience m'a permi d'améliorer considérablement mon niveau en anglais jusqu'au B2 nécessaire à l'obtention du diplôme."
       },
       {
+        "title": "Concours On Innov'",
         "image": "adrien_bouyssou_on_innov_novembre_2017.jpg",
         "text": "En novembre 2017, j'ai participé au concours organisé dans le cadre du salon *On Innov'* de Onet-Le-Chateau, dans l'agglomération ruthénoise. Avec l'équipe KAVAM, nous avons présenté le concept de notre jeu mobile sur le thème de l'économie d'énergie. Notre présentation nous a vallu la première place de ce concours."
       }
