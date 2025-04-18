@@ -34,7 +34,7 @@ body {
 }
 
 a, a:visited {
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--primary);
 }
 
@@ -79,8 +79,8 @@ button:hover, .clickable:hover {
 }
 
 .highlight,
-.markdown strong,
-.markdown em {
+strong,
+em {
   font-style: inherit;
   font-weight: bold;
   color: var(--primary);
@@ -192,24 +192,55 @@ h2 {
 .experiences {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2em;
 }
 
-.experience {
+.card {
+  box-shadow: var(--text) 0px 0px 5px;
+  border-radius: 5px;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
 }
 
-.experience .illustration {
-  width: 90%;
-  aspect-ratio: 16/9;
-  background-color: var(--primary);
-  background-size: cover;
-  border-radius: 1em;
-  box-shadow: var(--text) 0 0 5px;
+.card h3,
+.card .text,
+.card .additional {
+  margin: 2px 5px;
+}
+
+.card h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.additional {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills {
+  display: flex;
+  gap: 5px;
+}
+
+.dates {
+  color: grey;
 }
 
 @media (min-width: 425px) {
@@ -253,25 +284,18 @@ h2 {
     height: 50px;
   }
 
-  .experience {
-    width: 100%;
-  }
-
-  .experience:nth-child(2n + 1) {
+  .experiences {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3em;
   }
 
-  .experience:nth-child(2n) {
-    flex-direction: row-reverse;
-
-  }
-
-  .experience .illustration {
-    width: 40%;
-  }
-
-  .experience .markdown {
-    width: 60%;
+  .card h3,
+  .card .text,
+  .card .additional {
+    padding: 5px 10px;
   }
 }
 
@@ -286,8 +310,7 @@ h2 {
   }
 
   section {
-    padding-left: 5%;
-    padding-right: 5%;
+    margin: 0 2%;
   }
 
   .welcomeSection {
@@ -327,4 +350,12 @@ h2 {
     transform: rotate(45deg);
   }
 
+  .experiences {
+    gap: 1em;
+  }
+
+  .card {
+    width: 325px;
+    font-size: 0.8em;
+  }
 }

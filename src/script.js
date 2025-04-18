@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("./resources/experiences.json")
     .then((response) => response.json())
     .then((data) => {
-      displayExperiences(data.work);
-      displayExperiences(data.projects);
-      displayExperiences(data.personal);
+      for (let experiences of Object.values(data)) {
+        displayExperiences(experiences);
+      }
 
       const contactLanding = document.getElementById("contact-landing");
       const contactNav = document.getElementById("contact-nav");
@@ -43,24 +43,8 @@ function displayExperiences(experiences) {
   const experiencesList = document.createElement("div");
   experiencesList.className = "experiences";
 
-  // Load experience items
   for (let experience of experiences.experiences) {
-    const experienceItem = document.createElement("article");
-    experienceItem.className = "experience";
-
-    const experienceImage = document.createElement("img");
-    experienceImage.className = "illustration";
-    experienceImage.src = `./resources/images/${experience.image}`;
-    experienceItem.appendChild(experienceImage);
-
-    const experienceDetails = document.createElement("p");
-    experienceDetails.className = "markdown";
-    experienceDetails.innerHTML = DOMPurify.sanitize(
-      marked.parse(experience.text)
-    );
-    experienceItem.appendChild(experienceDetails);
-
-    experiencesList.appendChild(experienceItem);
+    experiencesList.appendChild(generateCardFromExperience(experience));
   }
 
   experiencesContainer.appendChild(experiencesList);
@@ -77,4 +61,34 @@ function updateNavNameText() {
   const navName = document.getElementsByClassName("name")[0];
   navName.innerText =
     document.documentElement.clientWidth > 500 ? "Adrien BOUYSSOU" : "A.B.";
+}
+
+function generateCardFromExperience(experience) {
+  const card = document.createElement("div");
+  card.className = "card";
+  
+  const title = document.createElement("h3");
+  if (experience.link) {
+    const link = document.createElement("a");
+    link.href = experience.link;
+    link.target = "_blank";
+    link.innerText = experience.title;
+    title.appendChild(link);
+  } else {
+    title.innerText = experience.title;
+  }
+  card.appendChild(title);
+
+  const image = document.createElement("img");
+  image.className = "image";
+  image.src = `./resources/images/${experience.image}`;
+  image.alt = experience.title;
+  card.appendChild(image);
+
+  const description = document.createElement("div");
+  description.className = "text";
+  description.innerHTML = DOMPurify.sanitize(marked.parse(experience.text));
+  card.appendChild(description);
+
+  return card;
 }
