@@ -287,7 +287,7 @@ h2 {
   .experiences {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-start;
     gap: 3em;
   }
@@ -357,5 +357,9 @@ h2 {
   .card {
     width: 325px;
     font-size: 0.8em;
+  }
+
+  a button {
+    text-decoration: none;
   }
 }
