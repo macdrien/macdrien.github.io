@@ -34,7 +34,7 @@
       },
       {
         "title": "Tournament Manager",
-        "link": "https://macdrien.github.io/tounrament-manager-frontend",
+        "link": "https://macdrien.github.io/tournament-manager-frontend",
         "image": "link.svg",
         "text": "Le **[Tournament-Manager](https://macdrien.github.io/tournament-manager-frontend)** est un Proof Of Concept que j'ai développé sous la forme d'un exercice personnel. L'objectif est de permettre la génération d'un arbre de matchs pour des tournois. J'ai complété ce projet pour y ajouter un formulaire de création de tournois en définissant le nombre d'équipes et de joueurs et organisant les matchs aléatoirement. L'affichage du tournois permet de voir le match en cours et de présenter le.s gagnant.e.s. J'ai également profité de ces pages pour tester un système d'affichage avec le choix d'un thème clair et un sombre. Je considère sa v1 terminée, mais je garde ce projet de côté pour y ajouter de nombreuses foncitonnalités, la persistence de données en tête."
       }
