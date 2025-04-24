@@ -49,7 +49,7 @@ button {
   border: 2px solid var(--primary);
   padding: 10px;
   border-radius: 20px;
-  box-shadow: var(--text) 0 2px 4px;
+  border: 1px solid grey;
 }
 
 button:hover {
