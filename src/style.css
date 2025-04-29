@@ -197,7 +197,7 @@ h2 {
 }
 
 .card {
-  box-shadow: var(--text) 0px 0px 5px;
+  border: 1px solid var(--text);
   border-radius: 5px;
   width: 300px;
   display: flex;
@@ -217,7 +217,9 @@ h2 {
   width: 100%;
 }
 
-.image {
+.card .image {
+  border-top: 1px solid var(--text);
+  border-bottom: 1px solid var(--text);
   width: 100%;
   object-fit: contain;
 }
