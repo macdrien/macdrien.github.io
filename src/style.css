@@ -371,7 +371,6 @@ h2 {
   }
 
   .card {
-    width: 325px;
     font-size: 0.8em;
   }
 
@@ -381,6 +380,10 @@ h2 {
 }
 
 @media (min-width: 1280px) {
+  .card {
+    width: 350px;
+  }
+  
   .contact-links {
     display: flex;
     justify-content: space-evenly;
