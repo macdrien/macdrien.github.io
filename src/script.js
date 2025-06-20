@@ -29,6 +29,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   const clickableName = document.getElementById("clickable-name");
   clickableName.onclick = () => goToId("main");
 
+  const checkoutButton = document.getElementById("checkout-work");
+  if (checkoutButton) {
+    checkoutButton.onclick = () => goToId("work");
+  }
+
   // Language switcher logic
   const langSwitcher = document.getElementById("lang-switcher");
   let currentLang = "fr";
