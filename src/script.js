@@ -18,6 +18,9 @@ async function loadTranslations() {
 document.addEventListener("DOMContentLoaded", async () => {
   const translations = await loadTranslations();
   
+  const browserLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+  let initialLang = browserLang.startsWith("fr") ? "fr" : "en";
+
   const contactLanding = document.getElementById("contact-landing");
   const contactNav = document.getElementById("contact-nav");
   contactLanding.onclick = () => goToId("contact");
@@ -34,9 +37,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     checkoutButton.onclick = () => goToId("work");
   }
 
-  // Language switcher logic
   const langSwitcher = document.getElementById("lang-switcher");
-  let currentLang = "fr";
+  let currentLang = initialLang;
+  langSwitcher.textContent = currentLang === "fr" ? "EN" : "FR";
   langSwitcher.onclick = async () => {
     currentLang = currentLang === "fr" ? "en" : "fr";
     langSwitcher.textContent = currentLang === "fr" ? "EN" : "FR";
@@ -46,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   updateNavNameText();
 
-  await loadLabels(translations);
+  await loadLabels(translations, initialLang);
 });
 
 function goToId(id) {
@@ -124,9 +127,9 @@ function updateLabelsFromI18n() {
   });
 }
 
-async function loadLabels(translations) {
+async function loadLabels(translations, initialLang) {
   await i18next.init({
-    lng: "fr",
+    lng: initialLang,
     resources: {
       fr: { translation: translations.fr },
       en: { translation: translations.en },
