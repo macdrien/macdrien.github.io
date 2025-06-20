@@ -6,9 +6,13 @@ const resizeObserver = new ResizeObserver((_entries) => updateNavNameText());
 resizeObserver.observe(document.body);
 
 async function loadTranslations() {
-  const response = await fetch('./resources/fr.json');
-  const translations = await response.json();
-  return translations;
+  const [frResponse, enResponse] = await Promise.all([
+    fetch('./resources/fr.json'),
+    fetch('./resources/en.json')
+  ]);
+  const fr = await frResponse.json();
+  const en = await enResponse.json();
+  return { fr, en };
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -24,6 +28,16 @@ document.addEventListener("DOMContentLoaded", async () => {
   document.getElementById("personal-nav").onclick = () => goToId("personal");
   const clickableName = document.getElementById("clickable-name");
   clickableName.onclick = () => goToId("main");
+
+  // Language switcher logic
+  const langSwitcher = document.getElementById("lang-switcher");
+  let currentLang = "fr";
+  langSwitcher.onclick = async () => {
+    currentLang = currentLang === "fr" ? "en" : "fr";
+    langSwitcher.textContent = currentLang === "fr" ? "EN" : "FR";
+    await i18next.changeLanguage(currentLang);
+    updateLabelsFromI18n();
+  };
 
   updateNavNameText();
 
@@ -43,25 +57,14 @@ function updateNavNameText() {
     document.documentElement.clientWidth > 500 ? "Adrien BOUYSSOU" : "A.B.";
 }
 
-async function loadLabels(translations) {
-  await i18next.init({
-    lng: "fr",
-    resources: {
-      fr: { translation: translations },
-    },
-  });
-
+function updateLabelsFromI18n() {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
     const translation = i18next.t(key);
-
     if (!translation) {
       console.warn(`Translation missing for key: ${key}`);
       return;
     }
-
-    // Generic handling for placeholders like {strong}, {em}, etc.
-    // Find all children with data-i18n and build a map by tag name
     const i18nChildren = Array.from(element.children).filter(child => child.hasAttribute && child.hasAttribute('data-i18n'));
     let result = translation;
     let hasPlaceholder = false;
@@ -70,16 +73,13 @@ async function loadLabels(translations) {
       const placeholder = `{${tag}}`;
       if (result.includes(placeholder)) {
         hasPlaceholder = true;
-        // Temporarily replace with a unique marker
         result = result.replace(placeholder, `__PLACEHOLDER_${tag.toUpperCase()}__`);
       }
     }
     if (hasPlaceholder) {
-      // Remove all children
       while (element.firstChild) {
         element.removeChild(element.firstChild);
       }
-      // Split the result by markers and inject nodes
       let lastIndex = 0;
       const regex = /__PLACEHOLDER_([A-Z]+)__/g;
       let match = regex.exec(result);
@@ -96,21 +96,17 @@ async function loadLabels(translations) {
         lastIndex = match.index + match[0].length;
         match = regex.exec(result);
       }
-      // Append any remaining text
       if (lastIndex < result.length) {
         element.append(document.createTextNode(result.substring(lastIndex)));
       }
     } else {
-      // If the element has children with data-i18n, only update its direct text nodes
       const hasI18nChild = i18nChildren.length > 0;
       if (hasI18nChild) {
-        // Remove all direct text nodes
         Array.from(element.childNodes).forEach(node => {
           if (node.nodeType === Node.TEXT_NODE) {
             element.removeChild(node);
           }
         });
-        // Insert the translation as a text node at the beginning
         element.insertBefore(document.createTextNode(translation), element.firstChild);
       } else {
         if (key.includes('.experience.') && key.endsWith('.text')) {
@@ -121,4 +117,15 @@ async function loadLabels(translations) {
       }
     }
   });
+}
+
+async function loadLabels(translations) {
+  await i18next.init({
+    lng: "fr",
+    resources: {
+      fr: { translation: translations.fr },
+      en: { translation: translations.en },
+    },
+  });
+  updateLabelsFromI18n();
 }
