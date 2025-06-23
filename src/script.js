@@ -5,16 +5,6 @@ import i18next from "https://cdn.jsdelivr.net/npm/i18next@23.10.0/dist/esm/i18ne
 const resizeObserver = new ResizeObserver((_entries) => updateNavNameText());
 resizeObserver.observe(document.body);
 
-async function loadTranslations() {
-  const [frResponse, enResponse] = await Promise.all([
-    fetch('./resources/fr.json'),
-    fetch('./resources/en.json')
-  ]);
-  const fr = await frResponse.json();
-  const en = await enResponse.json();
-  return { fr, en };
-}
-
 document.addEventListener("DOMContentLoaded", async () => {
   const translations = await loadTranslations();
   
@@ -51,6 +41,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   await loadLabels(translations, initialLang);
 });
+
+async function loadTranslations() {
+  const [frResponse, enResponse] = await Promise.all([
+    fetch('./resources/fr.json'),
+    fetch('./resources/en.json')
+  ]);
+  const fr = await frResponse.json();
+  const en = await enResponse.json();
+  return { fr: { translation: fr }, en: { translation: en } };
+}
 
 function goToId(id) {
   const element = document.getElementById(id);
@@ -130,10 +130,7 @@ function updateLabelsFromI18n() {
 async function loadLabels(translations, initialLang) {
   await i18next.init({
     lng: initialLang,
-    resources: {
-      fr: { translation: translations.fr },
-      en: { translation: translations.en },
-    },
+    resources: translations,
   });
   updateLabelsFromI18n();
 }
