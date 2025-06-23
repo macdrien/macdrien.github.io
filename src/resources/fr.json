@@ -1,8 +1,7 @@
 {
     "name": "Adrien BOUYSSOU",
     "welcome": {
-        "title": "Bonjour,",
-        "subtitle": "je suis ",
+        "title": "Bonjour, je suis ",
         "role": "Full-stack web developpeur chez Viveris Technologies",
         "description": {
             "text": "Ingénieur logiciel depuis 3 ans,\nje travaille principalement avec {strong} et JavaScript. J'ai rejoint Viveris Technologies (Toulouse, France) après mon diplôme en 2021. J'y travaille comme ingénieur full-stack. Je travaille également sur des side-projects sur mon temps libre.",
