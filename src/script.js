@@ -73,57 +73,9 @@ function updateLabelsFromI18n() {
       console.warn(`Translation missing for key: ${key}`);
       return;
     }
-    const i18nChildren = Array.from(element.children).filter(child => child.hasAttribute && child.hasAttribute('data-i18n'));
-    let result = translation;
-    let hasPlaceholder = false;
-    for (const i18nChild of i18nChildren) {
-      const tag = i18nChild.tagName.toLowerCase();
-      const placeholder = `{${tag}}`;
-      if (result.includes(placeholder)) {
-        hasPlaceholder = true;
-        result = result.replace(placeholder, `__PLACEHOLDER_${tag.toUpperCase()}__`);
-      }
-    }
-    if (hasPlaceholder) {
-      while (element.firstChild) {
-        element.removeChild(element.firstChild);
-      }
-      let lastIndex = 0;
-      const regex = /__PLACEHOLDER_([A-Z]+)__/g;
-      let match = regex.exec(result);
-      while (match !== null) {
-        const text = result.substring(lastIndex, match.index);
-        if (text) {
-          element.append(document.createTextNode(text));
-        }
-        const tag = match[1].toLowerCase();
-        const child = i18nChildren.find(c => c.tagName.toLowerCase() === tag);
-        if (child) {
-          element.append(child);
-        }
-        lastIndex = match.index + match[0].length;
-        match = regex.exec(result);
-      }
-      if (lastIndex < result.length) {
-        element.append(document.createTextNode(result.substring(lastIndex)));
-      }
-    } else {
-      const hasI18nChild = i18nChildren.length > 0;
-      if (hasI18nChild) {
-        Array.from(element.childNodes).forEach(node => {
-          if (node.nodeType === Node.TEXT_NODE) {
-            element.removeChild(node);
-          }
-        });
-        element.insertBefore(document.createTextNode(translation), element.firstChild);
-      } else {
-        if (key.includes('.experience.') && key.endsWith('.text')) {
-          element.innerHTML = DOMPurify.sanitize(marked.parse(translation));
-        } else {
-          element.textContent = translation;
-        }
-      }
-    }
+    const sanitizedHtml = DOMPurify.sanitize(marked.parse(translation));
+    // Remove the <p> and </p> tags
+    element.innerHTML = sanitizedHtml.substring(3, sanitizedHtml.length - 5);
   });
 }
 

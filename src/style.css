@@ -224,12 +224,6 @@ h2 {
   object-fit: contain;
 }
 
-.text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .additional {
   display: flex;
   justify-content: space-between;
