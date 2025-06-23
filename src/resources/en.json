@@ -1,16 +1,13 @@
 {
-    "name": "Adrien BOUYSSOU",
     "welcome": {
-        "title": "Hello, I am ",
+        "title": "Hello, I am **Adrien BOUYSSOU**",
         "role": "Full-stack web developer at Viveris Technologies",
-        "description": {
-            "text": "Software engineer for 3 years,\nI mainly work with {strong} and JavaScript. I joined Viveris Technologies (Toulouse, France) after my graduation in 2021. I work there as a full-stack engineer. I also work on side projects in my free time.",
-            "strong": "Java"
-        },
+        "description": "Software engineer for 3 years,\nI mainly work with **Java** and JavaScript. I joined Viveris Technologies (Toulouse, France) after my graduation in 2021. I work there as a full-stack engineer. I also work on side projects in my free time.",
         "contact": "Contact me",
         "work": "My work"
     },
     "navbar": {
+        "name": "Adrien BOUYSSOU",
         "work": "Work",
         "projects": "Projects",
         "personal": "Personal",
