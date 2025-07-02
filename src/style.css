@@ -196,40 +196,6 @@ h2 {
   gap: 2em;
 }
 
-.card {
-  border: 1px solid var(--text);
-  border-radius: 5px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-}
-
-.card h3,
-.card .text,
-.card .additional {
-  margin: 2px 5px;
-}
-
-.card h3 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.1em;
-  width: 100%;
-}
-
-.card .image {
-  border-top: 1px solid var(--text);
-  border-bottom: 1px solid var(--text);
-  width: 100%;
-  object-fit: contain;
-}
-
-.additional {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .skills {
   display: flex;
   gap: 5px;
@@ -301,12 +267,6 @@ h2 {
     align-items: flex-start;
     gap: 3em;
   }
-
-  .card h3,
-  .card .text,
-  .card .additional {
-    padding: 5px 10px;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -364,20 +324,12 @@ h2 {
     gap: 1em;
   }
 
-  .card {
-    font-size: 0.8em;
-  }
-
   a button {
     text-decoration: none;
   }
 }
 
 @media (min-width: 1280px) {
-  .card {
-    width: 350px;
-  }
-  
   .contact-links {
     display: flex;
     justify-content: space-evenly;
