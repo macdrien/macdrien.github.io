@@ -229,6 +229,22 @@ h3 {
 }
 
 @media (min-width: 425px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .welcomeSubtitle {
+    font-size: 1em;
+  }
+
   .landingLogo {
     width: 50%;
   }
@@ -237,10 +253,7 @@ h3 {
 @media (orientation: landscape) {
   h1 {
     text-align: left;
-  }
-
-  h2 {
-    font-size: 1.5em;
+    display: inline;
   }
 
   .welcomeSection {
@@ -276,9 +289,38 @@ h3 {
     align-items: flex-start;
     gap: 3em;
   }
+
+  .experience {
+    display: grid;
+    grid-template:
+      "title title"
+      "image description";
+    gap: 1em;
+  }
+
+  .experience h3 {
+    grid-area: title;
+  }
+
+  .experience .image {
+    grid-area: image;
+    width: 30vw;
+    padding: 0;
+    max-height: 200px;
+  }
+
+  .experience .description {
+    grid-area: description;
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1024px) {
+  h3 {
+    font-size: 1.3em;
+  }
+
   body {
     font-size: 16pt;
   }
@@ -305,16 +347,13 @@ h3 {
   }
 
   h1 {
-    display: inline;
     font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
   }
 
   h1 span::before {
     content: ' ';
-  }
-
-  .welcomeSubtitle {
-    font-size: 1.2em;
   }
 
   .checkout {
