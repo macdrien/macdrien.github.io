@@ -2,7 +2,7 @@
     "welcome": {
         "title": "Hello, I am **Adrien BOUYSSOU**",
         "role": "Full-stack web developer at Viveris Technologies",
-        "description": "Software engineer for 3 years,\nI mainly work with **Java** and JavaScript. I joined Viveris Technologies (Toulouse, France) after my graduation in 2021. I work there as a full-stack engineer. I also work on side projects in my free time.",
+        "description": "Software engineer for 4 years, I mainly work with **Java** and JavaScript. I joined Viveris Technologies (Toulouse, France) after my graduation in 2021. I work there as a full-stack engineer. I also work on side projects in my free time.",
         "contact": "Contact me",
         "work": "My work"
     },
@@ -24,7 +24,7 @@
         "experience": {
             "1": {
                 "title": "Viveris Technologies",
-                "text": "Since 2021, I work at *Viveris Technologies*. Based in Toulouse, I am a developer in an agile team. My tasks change from day to day, week to week, and sprint to sprint. My main skills remain web development, backend with a main API in *Spring*, and frontend with *VueJS* that we are introducing into the project. But I can also work on databases, networking and system administration."
+                "text": "Since 2021, I work at *Viveris Technologies*. Based in Toulouse, I am a developer in an agile team. My tasks change from day to day, week to week, and sprint to sprint. My main skills remain web development, backend with a main API in *Spring*, and frontend with *VueJS* that we are introducing into the project. But I can also work on databases, networking, system administration and CI."
             },
             "2": {
                 "title": "Work-study at Eiffage Energie Systèmes",
@@ -45,7 +45,7 @@
             },
             "2": {
                 "title": "Portfolio",
-                "text": "My **portfolio** is one of my projects. Initially made in ReactJS, I rebuilt it identically in **vanilla JavaScript**. This change allows me to get closer to pure technologies in order to use the tools that best fit each project."
+                "text": "My **portfolio** is one of my projects. Initially made in ReactJS, I rebuilt it identically in **JavaScript**. This change allows me to get closer to pure technologies in order to use the tools that best fit each project."
             },
             "3": {
                 "title": "Tournament Manager",

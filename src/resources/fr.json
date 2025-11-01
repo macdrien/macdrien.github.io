@@ -2,7 +2,7 @@
     "welcome": {
         "title": "Bonjour, je suis **Adrien BOUYSSOU**",
         "role": "Full-stack web developpeur chez Viveris Technologies",
-        "description": "Ingénieur logiciel depuis 3 ans,\nje travaille principalement avec **Java** et JavaScript. J'ai rejoint Viveris Technologies (Toulouse, France) après mon diplôme en 2021. J'y travaille comme ingénieur full-stack. Je travaille également sur des side-projects sur mon temps libre.",
+        "description": "Ingénieur logiciel depuis 4 ans, je travaille principalement avec **Java** et JavaScript. J'ai rejoint Viveris Technologies (Toulouse, France) après mon diplôme en 2021. J'y travaille comme ingénieur full-stack. Je travaille également sur des side-projects sur mon temps libre.",
         "contact": "Contactez-moi",
         "work": "Mon travail"
     },
@@ -28,7 +28,7 @@
             },
             "2": {
                 "title": "Alternance à Eiffage Energie Systèmes",
-                "text": "De 2018 à 2021, j'ai fait une école d'ingénieur en alternance. Je travaillais chez *Eiffage-Energie-Systèmes* et j'étudiais au sein de l'*UTBM* (Université de Technologie de Belfort-Montbéliard).  Je travaillais à Mulhouse, en Alsace, en tant que développeur web avec du *Spring Boot* pour le back-end et en *ReactJS* en framework front-end.  Pour mes études, mon université était localisée à Belfort, proche de Mulhouse."
+                "text": "De 2018 à 2021, j'ai fait une école d'ingénieur en alternance. Je travaillais chez *Eiffage-Energie-Systèmes* et j'étudiais au sein de l'*UTBM* (Université de Technologie de Belfort-Montbéliard). Je travaillais à Mulhouse, en Alsace, en tant que développeur web avec du *Spring Boot* pour le back-end et en *ReactJS* en framework front-end. Pour mes études, mon université était localisée à Belfort, proche de Mulhouse."
             },
             "3": {
                 "title": "DUT Informatique",
@@ -41,7 +41,7 @@
         "experience": {
             "1": {
                 "title": "GitHub",
-                "text": "Lorsque je développe un projet personnel, je le versionne systématiquement vie l'incontournable **Git** sur **GitHub**. Cela me permet de le sauvegarder, de retrouver tous mes projets partour, et surtout, comme c'est le cas pour ce portfolio, de déployer mes projets statiques sur GitHub Pages facilement grâce aux GitHub Actions."
+                "text": "Lorsque je développe un projet personnel, je le versionne systématiquement via l'incontournable **Git** sur **GitHub**. Cela me permet de le sauvegarder, de retrouver tous mes projets partout, et surtout, comme c'est le cas pour ce portfolio, de déployer mes projets statiques sur GitHub Pages facilement grâce aux GitHub Actions."
             },
             "2": {
                 "title": "Portfolio",
@@ -49,7 +49,7 @@
             },
             "3": {
                 "title": "Tournament Manager",
-                "text": "Le **[Tournament-Manager](https://macdrien.github.io/tournament-manager-frontend)** est un Proof Of Concept que j'ai développé sous la forme d'un exercice personnel. L'objectif est de permettre la génération d'un arbre de matchs pour des tournois. J'ai complété ce projet pour y ajouter un formulaire de création de tournois en définissant le nombre d'équipes et de joueurs et organisant les matchs aléatoirement. L'affichage du tournois permet de voir le match en cours et de présenter le.s gagnant.e.s. J'ai également profité de ces pages pour tester un système d'affichage avec le choix d'un thème clair et un sombre. Je considère sa v1 terminée, mais je garde ce projet de côté pour y ajouter de nombreuses foncitonnalités, la persistence de données en tête."
+                "text": "Le **[Tournament-Manager](https://macdrien.github.io/tournament-manager-frontend)** est un Proof Of Concept que j'ai développé sous la forme d'un exercice personnel. L'objectif est de permettre la génération d'un arbre de matchs pour des tournois. J'ai complété ce projet pour y ajouter un formulaire de création de tournois en définissant le nombre d'équipes et de joueurs et organisant les matchs aléatoirement. L'affichage du tournois permet de voir le match en cours et de présenter le.s gagnant.e.s. J'ai également profité de ces pages pour tester un système d'affichage avec le choix d'un thème clair et un sombre. Je considère sa première version terminée, mais je garde ce projet de côté pour y ajouter de nombreuses fonctionnalités, la persistence de données en tête."
             }
         }
     },
@@ -58,11 +58,11 @@
         "experience": {
             "1": {
                 "title": "Immersion en Angleterre",
-                "text": "L'obtention d'un diplôme d'ingénieur nécessite une expérience de douze semaines à l'international. Par conséquent, je suis parti travailler trois mois, sur l'été 2019, chez *Ace Printwear* une, petite société à *Torquay* (Devon, UK), qui personnalise des textiles grâce à du flocage, principalement pour les nombreux touristes de l'English Riviera et les entreprises locales. Cette expérience m'a permi d'améliorer considérablement mon niveau en anglais jusqu'au B2 nécessaire à l'obtention du diplôme."
+                "text": "L'obtention d'un diplôme d'ingénieur nécessite une expérience de douze semaines à l'international. Par conséquent, je suis parti travailler trois mois, sur l'été 2019, chez *Ace Printwear*, une petite société à *Torquay* (Devon, UK), qui personnalise des textiles grâce à du flocage, principalement pour les nombreux touristes de l'English Riviera et les entreprises locales. Cette expérience m'a permi d'améliorer considérablement mon niveau en anglais jusqu'au B2 nécessaire à l'obtention du diplôme."
             },
             "2": {
                 "title": "Concours On Innov'",
-                "text": "En novembre 2017, j'ai participé au concours organisé dans le cadre du salon *On Innov'* de Onet-Le-Chateau, dans l'agglomération ruthénoise. Avec l'équipe KAVAM, nous avons présenté le concept de notre jeu mobile sur le thème de l'économie d'énergie. Notre présentation nous a vallu la première place de ce concours."
+                "text": "En novembre 2017, j'ai participé au concours organisé dans le cadre du salon *On Innov'* de Onet-Le-Chateau, dans l'agglomération ruthénoise. Avec l'équipe KAVAM, nous avons présenté le concept de notre jeu mobile sur le thème de l'économie d'énergie. Notre présentation nous a permi d'obtenir la première place de ce concours."
             }
         }
     }
