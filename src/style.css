@@ -403,6 +403,34 @@ h3 {
     width: 40px;
     height: 40px;
   }
+
+  .experience {
+    display: grid;
+  }
+
+  .experience:nth-child(2n + 1) {
+    grid-template-areas: 
+    "image title"
+    "image description";
+  }
+
+  .experience:nth-child(2n) {
+    grid-template-areas: 
+    "title image"
+    "description image";
+  }
+
+  .experience .image {
+    grid-area: image;
+  }
+
+  .experience h3 {
+    grid-area: title;
+  }
+
+  .experience .description {
+    grid-area: description;
+  }
 }
 
 #lang-switcher {
