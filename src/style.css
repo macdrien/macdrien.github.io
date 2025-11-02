@@ -11,7 +11,8 @@
 body {
   font-family: "Geologica", "Roboto", sans-serif;
   font-style: normal;
-  height: 100vh;
+  height: 100vh; /* fallback pour les navigateurs qui ne supportent pas dvh */
+  height: 100dvh; /* utilise la hauteur dynamique du viewport sur mobile */
   font-size: 12pt;
   background-color: var(--alt);
   color: var(--text);
@@ -109,7 +110,8 @@ h3 {
 
 .welcomeSection {
   padding-top: 0;
-  height: 100vh;
+  height: 100vh; /* fallback pour les navigateurs qui ne supportent pas dvh */
+  height: 100dvh; /* utilise la hauteur dynamique du viewport sur mobile */
 }
 
 .presentation {
@@ -118,7 +120,8 @@ h3 {
   justify-content: space-evenly;
   align-items: center;
   gap: 1em;
-  height: 93vh;
+  height: 90vh; /* fallback pour les navigateurs qui ne supportent pas dvh */
+  height: 90dvh; /* utilise la hauteur dynamique du viewport sur mobile */
 }
 
 .presentationText p {
@@ -141,7 +144,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 7vh;
+  height: 7vh; /* fallback pour les navigateurs qui ne supportent pas dvh */
+  height: 7dvh; /* utilise la hauteur dynamique du viewport sur mobile */
 }
 
 .checkout > div {
@@ -202,7 +206,7 @@ h3 {
 
 .experience .image {
   padding: 1em 0;
-  width: 100vw;
+  width: 100%;
   aspect-ratio: 16 / 10;
 }
 
@@ -267,7 +271,8 @@ h3 {
 
   .presentation {
     flex-direction: row;
-    height: 90vh;
+    height: 90vh; /* fallback pour les navigateurs qui ne supportent pas dvh */
+    height: 90dvh; /* utilise la hauteur dynamique du viewport sur mobile */
   }
 
   .landingLogo {
@@ -275,7 +280,8 @@ h3 {
   }
 
   .checkout {
-    height: 10vh;
+    height: 10vh; /* fallback pour les navigateurs qui ne supportent pas dvh */
+    height: 10dvh; /* utilise la hauteur dynamique du viewport sur mobile */
   }
 
   #navbar {
