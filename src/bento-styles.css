@@ -1,0 +1,54 @@
+body {
+  font-family: "Geologica", "Roboto", sans-serif;
+  font-style: normal;
+  height: 100vh; /* fallback pour les navigateurs qui ne supportent pas dvh */
+  height: 100dvh; /* utilise la hauteur dynamique du viewport sur mobile */
+  font-size: 12pt;
+  background-color: var(--alt);
+  color: var(--text);
+  padding: 0 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.25em;
+}
+
+.card-list {
+    display: flex;
+    gap: 5em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 2em;
+    width: 25em;
+    height: 30em;
+    overflow: hidden;
+}
+
+.card img {
+    border-radius: 2em;
+    border: 1px solid #dddddd;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+}
