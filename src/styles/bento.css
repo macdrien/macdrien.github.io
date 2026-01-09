@@ -1,25 +1,9 @@
-:root {
-  --brown1: #BF8F65;
-  --brown2: #59432F;
-  --brown3: #0D0D0D;
-
-  --green1: #D3D9BF;
-  --green2: #657348;
-
-  --card-width: 300px;
-  --card-height: 450px;
-
-  font-size: 18px;
-}
+@import url("./variables.css");
 
 body {
-  font-family: "Geologica", "Roboto", sans-serif;
-  font-style: normal;
   height: 100vh; /* fallback pour les navigateurs qui ne supportent pas dvh */
   height: 100dvh; /* utilise la hauteur dynamique du viewport sur mobile */
-  background-color: var(--green1);
   padding: 0 5px;
-  color: var(--brown3);
 }
 
 * {

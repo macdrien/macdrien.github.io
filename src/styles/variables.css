@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+:root {
+  --brown1: #BF8F65;
+  --brown2: #59432F;
+  --brown3: #0D0D0D;
+
+  --green1: #D3D9BF;
+  --green2: #657348;
+
+  --card-width: 300px;
+  --card-height: 450px;
+
+  font-size: 16px;
+
+  font-family: "Geologica", "Roboto", sans-serif;
+  font-style: normal;
+
+  color: var(--brown3);
+  background-color: var(--green1);
+}
