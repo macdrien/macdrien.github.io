@@ -1,21 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import url("./variables.css");
+@import url("./global_menu.css");
 
-/* Color palette https://coolors.co/ffffff-548c2f-596475-000100-4c6085 */
 :root {
-  --primary: #548C2F;
-  --text: #000100;
-  --alt: #FFFFFF;
+  --text: var(--brown3);
+  --alt: var(--green1);
+  --primary: var(--brown2);
 }
 
 body {
-  font-family: "Geologica", "Roboto", sans-serif;
-  font-style: normal;
   height: 100vh; /* fallback pour les navigateurs qui ne supportent pas dvh */
   height: 100dvh; /* utilise la hauteur dynamique du viewport sur mobile */
-  font-size: 12pt;
-  background-color: var(--alt);
-  color: var(--text);
   padding: 0 5px;
 }
 
@@ -46,11 +40,10 @@ a:hover {
 button {
   font-weight: bold;
   background-color: var(--primary);
-  color: var(--text);
-  border: 2px solid var(--primary);
+  color: var(--alt);
   padding: 10px;
   border-radius: 20px;
-  border: 1px solid grey;
+  box-shadow: 1px 1px 5px var(--green2);
 }
 
 button:hover {
@@ -65,7 +58,7 @@ button:hover {
   0% {
     background-color: var(--primary);
     color: var(--text);
-    box-shadow: var(--text) 0 2px 4px;
+    box-shadow: var(--green2) 1px 1px 5px;
   }
   100% {
     color: var(--primary);
@@ -84,7 +77,7 @@ strong,
 em {
   font-style: inherit;
   font-weight: bold;
-  color: var(--primary);
+  color: var(--green2);
 }
 
 section {
@@ -130,14 +123,14 @@ h3 {
 
 .welcomeSubtitle {
   font-size: 0.8em;
-  opacity: 0.8;
+  color: var(--green2);
   text-align: center;
 }
 
 .landingLogo {
   width: 70%;
   border-radius: 100%;
-  box-shadow: var(--text) 0 0 5px;
+  box-shadow: var(--green2) 0 0 5px;
 }
 
 .checkout {
@@ -197,6 +190,11 @@ h3 {
   text-decoration: underline;
 }
 
+#navbar a {
+  color: var(--brown3);
+  text-decoration: none;
+}
+
 .experiences {
   display: flex;
   flex-direction: column;
@@ -217,20 +215,6 @@ h3 {
 
 .dates {
   color: grey;
-}
-
-.contact-link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  margin-top: 20px;
-}
-
-.contact-icon {
-  width: 32px;
-  height: 32px;
 }
 
 @media (min-width: 425px) {
@@ -393,17 +377,6 @@ h3 {
 }
 
 @media (min-width: 1280px) {
-  .contact-links {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .contact-icon {
-    width: 40px;
-    height: 40px;
-  }
-
   .experience {
     display: grid;
   }
@@ -441,7 +414,7 @@ h3 {
   padding: 8px 16px;
   font-weight: bold;
   background-color: var(--primary);
-  color: var(--text);
+  color: var(--alt);
   border: 2px solid var(--primary);
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
