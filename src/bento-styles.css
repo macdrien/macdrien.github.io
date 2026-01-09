@@ -37,18 +37,49 @@ h1 {
 }
 
 .card {
-    padding: 5px;
+    padding: 1em;
     border: 1px solid black;
     border-radius: 2em;
     width: 25em;
     height: 30em;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card img {
     border-radius: 2em;
-    border: 1px solid #dddddd;
     width: 100%;
     height: auto;
     margin-bottom: 0.5em;
+    box-shadow: 0 0 1em black;
 }
+
+.card h3 {
+    font-size: 3em;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.card .card-content p::before {
+    content: '|';
+    margin-right: 0.5em;
+    font-size: 1.5em;
+}
+
+.card .card-content button {
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 1em;
+    height: 3em;
+}
+
+
+/* Card style inspiration https://codepen.io/TheMOZZARELLA/pen/mdoJdmE */
