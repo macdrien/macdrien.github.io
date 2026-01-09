@@ -190,6 +190,11 @@ h3 {
   text-decoration: underline;
 }
 
+#navbar a {
+  color: var(--brown3);
+  text-decoration: none;
+}
+
 .experiences {
   display: flex;
   flex-direction: column;
