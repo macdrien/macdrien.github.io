@@ -1,15 +1,26 @@
+:root {
+  --brown1: #BF8F65;
+  --brown2: #59432F;
+  --brown3: #0D0D0D;
+
+  --green1: #D3D9BF;
+  --green2: #657348;
+
+  --card-width: 300px;
+  --card-height: 450px;
+
+  font-size: 18px;
+}
+
 body {
   font-family: "Geologica", "Roboto", sans-serif;
   font-style: normal;
   height: 100vh; /* fallback pour les navigateurs qui ne supportent pas dvh */
   height: 100dvh; /* utilise la hauteur dynamique du viewport sur mobile */
-  font-size: 12pt;
-  background-color: var(--alt);
-  color: var(--text);
+  background-color: var(--green1);
   padding: 0 5px;
+  color: var(--brown3);
 }
-
-/* New palette to use https://coolors.co/361c07-533113-8c5c2b-9c7744-eae5d6-e0e3ca-b4c187-80914b-5a6b3a-496231 */
 
 * {
   margin: 0;
@@ -19,69 +30,100 @@ body {
 
 header {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    margin-bottom: 1em;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.25em;
+    font-size: 2em;
 }
 
-.card-list {
-    display: flex;
-    gap: 5em;
-    width: 100%;
-    overflow: hidden;
-}
-
-.card {
-    padding: 1em;
-    border: 1px solid black;
-    border-radius: 2em;
-    width: 25em;
-    height: 30em;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card img {
-    border-radius: 2em;
-    width: 100%;
-    height: auto;
-    margin-bottom: 0.5em;
-    box-shadow: 0 0 1em black;
-}
-
-.card h3 {
-    font-size: 3em;
-}
-
-.card .card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1em;
-}
-
-.card .card-content p::before {
-    content: '|';
-    margin-right: 0.5em;
+h2 {
     font-size: 1.5em;
 }
 
-.card .card-content button {
-    border-radius: 5px;
-    border: 1px solid black;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    font-size: 1em;
-    height: 3em;
+.card-list {
+    margin: 0 calc((100vw - var(--card-width)) / 2);
+    padding-bottom: 10px;
 }
 
+.card {
+  width: var(--card-width);
+  height: var(--card-height);
 
-/* Card style inspiration https://codepen.io/TheMOZZARELLA/pen/mdoJdmE */
+  margin-bottom: 30px;
+
+  background-color: var(--green1);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  
+  box-shadow: 1px 1px 5px var(--brown2);
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.card-image {
+  height: auto;
+  max-height: calc((var(--card-height) - 30px) / 2);
+  width: 100%;
+  border-radius: 15px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 1px 1px 5px var(--brown2);
+  overflow: hidden;
+}
+
+.card-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-icon {
+  align-self: flex-end;
+  height: 200px;
+  width: 200px;
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card-body {
+  height: 200px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 2em;
+}
+
+.card-content {
+  padding-left: 1em;
+  border-left: 3px solid black;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 1em;
+  border: none;
+  background-color: var(--brown2);
+  box-shadow: 1px 1px 5px var(--brown2);
+  color: var(--green1);
+  font-weight: bold;
+}
+
+button:hover {
+  color: var(--brown2);
+  background-color: var(--green1);
+  transform: translate(1px, 1px);
+}
