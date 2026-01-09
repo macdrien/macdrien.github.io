@@ -10,14 +10,7 @@
         "name": "Adrien BOUYSSOU",
         "work": "Travail",
         "projects": "Projets",
-        "personal": "Personnel",
-        "contact": "Contact"
-    },
-    "contact": {
-        "title": "Contact",
-        "email": "adrien.bouyssou@pm.me",
-        "linkedin": "www.linkedin.com/in/adrien-bouyssou",
-        "location": "Toulouse Sud-Est, Occitanie, France"
+        "personal": "Personnel"
     },
     "work": {
         "title": "Mes expériences professionnelles",
