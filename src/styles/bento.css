@@ -96,18 +96,10 @@ button:hover {
   transform: translate(1px, 1px);
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 768px  ) {
     body {
         height: unset;
         padding: 0; 
-    }
-
-    header {
-        margin-bottom: 50px;
-    }
-
-    h1 {
-        margin-bottom: 20px
     }
 
     .card-list {
@@ -123,5 +115,15 @@ button:hover {
 
     .card {
         flex-shrink: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        margin-bottom: 20px
     }
 }
