@@ -1,139 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" type="image/x-icon" href="./resources/images/occimore_logo.ico">
-  <link rel="stylesheet" href="./styles/index.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adrien Bouyssou</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Adrien Bouyssou</h1>
+      <h2>Sidranie et Occimore</h2>
+    </header>
 
-  <!-- Primary Meta Tags -->
-  <title>Adrien BOUYSSOU</title>
-  <meta name="title" content="Adrien BOUYSSOU" />
-  <meta name="description" content="Mon portfolio qui référence mes expériences et mes projets" />
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://macdrien.github.io/" />
-  <meta property="og:title" content="Adrien BOUYSSOU" />
-  <meta property="og:description" content="Mon portfolio qui référence mes exépriences et mes projets" />
-  <meta property="og:image" content="./resources/images/occimore_logo.png" />
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://macdrien.github.io/" />
-  <meta property="twitter:title" content="Adrien BOUYSSOU" />
-  <meta property="twitter:description" content="Mon portfolio qui référence mes exépriences et mes projets" />
-  <meta property="twitter:image" content="./resources/images/occimore_logo.png" />
-  
-  <!-- Meta Tags Generated with https://metatags.io -->
-</head>
-<body>
-  <button id="lang-switcher">EN</button>
-  <div id="main" class="main">
-    <section class="welcomeSection">
-      <div class="presentation">
-        <div class="presentationText">
-          <h1 data-i18n="welcome.title">Bonjour, je suis <strong data-i18n="name">Adrien BOUYSSOU</strong></h1>
+    <div class="menu">
+      <div id="menu-icon"></div>
+      <div class="menu-items">
+        <a href="index.html">Mes liens</a>
+        <a href="cv.html">Mon C.V</a>
+      </div>
+    </div>
+    <script>
+      document
+        .querySelector("#menu-icon")
+        .addEventListener("click", function () {
+          document.querySelector(".menu").classList.toggle("opened");
+        });
+    </script>
 
-          <p class="welcomeSubtitle" data-i18n="welcome.role">Full-stack web developpeur chez Viveris Technologies</p>
-          <p class="welcomeDescription" data-i18n="welcome.description">Ingénieur logiciel depuis 4 ans, je travaille principalement avec <strong data-i18n="welcome.description.strong">Java</strong> et JavaScript. J'ai rejoint Viveris Technologies (Toulouse, France) après mon diplôme en 2021. J'y travaille comme ingénieur full-stack. Je travaille également sur des side-projects sur mon temps libre.</p>
-          <button id="contact-landing" class="contactMe" data-i18n="welcome.contact">Contactez-moi</button>
+    <div class="card-list">
+      <div class="card">
+        <img
+          class="card-image"
+          src="resources/images/adrien_bouyssou_on_innov_novembre_2017.jpg"
+          alt="Je fais ma présentation au salon On Innov'"
+        />
+        <div class="card-body">
+          <h3 class="card-title">LinkedIn</h3>
+          <div class="card-content">
+            <p>Mes intéractions avec les autres professionnel.le.s</p>
+          </div>
+          <div class="card-action">
+            <a
+              href="https://www.linkedin.com/in/adrien-bouyssou/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>Aller voir</button>
+            </a>
+          </div>
         </div>
-        <img src="./resources/images/occimore_logo.png" alt="alt message" class="landingLogo"/>
       </div>
 
-      <div class="checkout">
-        <div id="checkout-work" class='clickable'>
-          <p data-i18n="welcome.work">Mon travail</p>
-          <div class="bottomArrow"/>
+      <div class="card">
+        <img
+          class="card-image"
+          src="resources/images/occimore_logo.png"
+          alt="Le logo Occimore"
+        />
+        <div class="card-body">
+          <h3 class="card-title">GitHub</h3>
+          <div class="card-content">
+            <p>Mon compte GitHub avec mes side-projects</p>
+          </div>
+          <div class="card-action">
+            <a
+              href="https://github.com/macdrien"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>Aller voir</button>
+            </a>
+          </div>
         </div>
       </div>
-    </section>
 
-    <section id="navbar">
-      <div id="clickable-name" class="name clickable">Adrien BOUYSSOU</div>
-      <nav>
-        <div id="work-nav" class="clickable" data-i18n="navbar.work">Travail</div>
-        <div id="projects-nav" class="clickable" data-i18n="navbar.projects">Projets</div>
-        <div id="personal-nav" class="clickable" data-i18n="navbar.personal">Personnel</div>
-        <div id="contact-nav" class='clickable' data-i18n="navbar.contact">Contact</div>
-      </nav>
-    </section>
+      <div class="card">
+        <img
+          class="card-image"
+          src="resources/images/occimore_logo.png"
+          alt="Le logo Occimore"
+        />
+        <div class="card-body">
+          <h3 class="card-title">Instagram</h3>
+          <div class="card-content">
+            <p>Mon espace plus créatif et personnel</p>
+          </div>
+          <div class="card-action">
+            <a
+              href="https://instagram.com/occimore"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button>Aller voir</button>
+            </a>
+          </div>
+        </div>
+      </div>
 
-    <section id="work">
-      <h2 data-i18n="work.title">Mes expériences professionnelles</h2>
-      <div class="experiences">
-        <div class="experience">
-          <h3 data-i18n="work.experience.1.title">Viveris Technologies</h3>
-          <img class="image" src="./resources/images/logo.svg" alt="Viveris Technologies" />
-          <div class="description"><p data-i18n="work.experience.1.text">Depuis 2021, je travaille chez <em>Viveris Technologies</em>. Basé à Toulouse, j'occupe le poste de développeur au sein d'une équipe agile. Mon travail change au fil des jours, des semaines et des sprints.  Mes compétences principales restent le développement web, en back-end avec une API principale en <em>Spring</em>, et en front-end avec <em>VueJS</em> que nous introduisons dans le projet. Mais, il m'arrive également de travailler sur les bases de données, faire du réseau ou encore de l'administration système et travailler sur la CI du projet.</p></div>
+      <div class="card">
+        <iframe
+          class="card-image"
+          src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d105135.98682199106!2d1.5597184886054554!3d43.540581402551275!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1767992251083!5m2!1sfr!2sfr"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="card-body">
+          <h3 class="card-title">Toulousain</h3>
+          <div class="card-content">
+            <p>
+              Mon lieu de résidence et de travail :<br />
+              Toulouse, <br />le Lauragais toulousain,<br />
+              le Tarn et l'Aveyron
+            </p>
+          </div>
         </div>
-        <div class="experience">
-          <h3 data-i18n="work.experience.2.title">Alternance à Eiffage Energie Systèmes</h3>
-          <img class="image" src="./resources/images/mulhouse.jpg" alt="Alternance à Eiffage Energie Systèmes" />
-          <div class="description"><p data-i18n="work.experience.2.text">De 2018 à 2021, j'ai fait une école d'ingénieur en alternance. Je travaillais chez <em>Eiffage-Energie-Systèmes</em> et j'étudiais au sein de l'<em>UTBM</em> (Université de Technologie de Belfort-Montbéliard). Je travaillais à Mulhouse, en Alsace, en tant que développeur web avec du <em>Spring Boot</em> pour le back-end et en <em>ReactJS</em> en framework front-end.  Pour mes études, mon université était localisée à Belfort, proche de Mulhouse.</p></div>
-        </div>
-        <div class="experience">
-          <h3 data-i18n="work.experience.3.title">DUT Informatique</h3>
-          <img class="image" src="./resources/images/iut_rodez.jpg" alt="DUT Informatique" />
-          <div class="description"><p data-i18n="work.experience.3.text">J'ai commencé mes études supérieures par un DUT en Informatique. J'ai passé ce diplôme de 2016 à 2018 à l'IUT de Rodez (Université Toulouse 1 Capitole). Cela m'a permi de m'initier correctement à l'informatique, notamment en <em>Java</em>. Cette formation m'a également apporté beaucoup de bases solides, notamment en base de données relationnelles.</p></div>
-        </div>
+        <div class="card-action"></div>
       </div>
-    </section>
-    <section id="projects">
-      <h2 data-i18n="projects.title">Mes projets personnels</h2>
-      <div class="experiences">
-        <div class="experience">
-          <h3><a href="https://github.com/macdrien" target="_blank" data-i18n="projects.experience.1.title">GitHub</a></h3>
-          <img class="image" src="./resources/images/github-brands-solid.svg" alt="GitHub" />
-          <div class="description"><p data-i18n="projects.experience.1.text">Lorsque je développe un projet personnel, je le versionne systématiquement vie l'incontournable <strong>Git</strong> sur <strong>GitHub</strong>. Cela me permet de le sauvegarder, de retrouver tous mes projets partour, et surtout, comme c'est le cas pour ce portfolio, de déployer mes projets statiques sur GitHub Pages facilement grâce aux GitHub Actions.</p></div>
-        </div>
-        <div class="experience">
-          <h3><a href="https://macdrien.github.io" target="_blank" data-i18n="projects.experience.2.title">Portfolio</a></h3>
-          <img class="image" src="./resources/images/link.svg" alt="Portfolio" />
-          <div class="description"><p data-i18n="projects.experience.2.text">Mon <strong>portfolio</strong> est l'un de mes projets. Initialement réalisé en ReactJS, je l'ai refait, à l'identique, en <strong>JavaScript</strong> vanilla. Ce changement me permet de me rapprocher au plus des technologies pures afin d'utiliser les outils qui correspondent au mieux à chaque projet.</p></div>
-        </div>
-        <div class="experience">
-          <h3><a href="https://macdrien.github.io/tournament-manager-frontend" target="_blank" data-i18n="projects.experience.3.title">Tournament Manager</a></h3>
-          <img class="image" src="./resources/images/link.svg" alt="Tournament Manager" />
-          <div class="description"><p data-i18n="projects.experience.3.text">Le <strong><a href="https://macdrien.github.io/tournament-manager-frontend">Tournament-Manager</a></strong> est un Proof Of Concept que j'ai développé sous la forme d'un exercice personnel. L'objectif est de permettre la génération d'un arbre de matchs pour des tournois. J'ai complété ce projet pour y ajouter un formulaire de création de tournois en définissant le nombre d'équipes et de joueurs et organisant les matchs aléatoirement. L'affichage du tournois permet de voir le match en cours et de présenter le.s gagnant.e.s. J'ai également profité de ces pages pour tester un système d'affichage avec le choix d'un thème clair et un sombre. Je considère sa v1 terminée, mais je garde ce projet de côté pour y ajouter de nombreuses foncitonnalités, la persistence de données en tête.</p></div>
-        </div>
-      </div>
-    </section>
-    <section id="personal">
-      <h2 data-i18n="personal.title">Mes expériences personnelles</h2>
-      <div class="experiences">
-        <div class="experience">
-          <h3 data-i18n="personal.experience.1.title">Immersion en Angleterre</h3>
-          <img class="image" src="./resources/images/ace_printwear.jpg" alt="Immersion en Angleterre" />
-          <div class="description"><p data-i18n="personal.experience.1.text">L'obtention d'un diplôme d'ingénieur nécessite une expérience de douze semaines à l'international. Par conséquent, je suis parti travailler trois mois, sur l'été 2019, chez <em>Ace Printwear</em> une, petite société à <em>Torquay</em> (Devon, UK), qui personnalise des textiles grâce à du flocage, principalement pour les nombreux touristes de l'English Riviera et les entreprises locales. Cette expérience m'a permi d'améliorer considérablement mon niveau en anglais jusqu'au B2 nécessaire à l'obtention du diplôme.</p></div>
-        </div>
-        <div class="experience">
-          <h3 data-i18n="personal.experience.2.title">Concours On Innov'</h3>
-          <img class="image" src="./resources/images/adrien_bouyssou_on_innov_novembre_2017.jpg" alt="Concours On Innov'" />
-          <div class="description"><p data-i18n="personal.experience.2.text">En novembre 2017, j'ai participé au concours organisé dans le cadre du salon <em>On Innov'</em> de Onet-Le-Chateau, dans l'agglomération ruthénoise. Avec l'équipe KAVAM, nous avons présenté le concept de notre jeu mobile sur le thème de l'économie d'énergie. Notre présentation nous a vallu la première place de ce concours.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2 data-i18n="contact.title">Contact</h2>
-      <div class="contact-links">
-        <a class="contact-link" href="mailto:adrien.bouyssou@protonmail.com?subject=Contact" target="_blank">
-          <img src="./resources/images/envelope-solid.svg" alt="Mail icon" class="contact-icon"/>
-          <span data-i18n="contact.email">adrien.bouyssou@pm.me</span>
-        </a>
-        <a class="contact-link" href="https://www.linkedin.com/in/adrien-bouyssou" target="_blank">
-          <img src="./resources/images/linkedin-brands.svg" alt="LinkedIn icon" class="contact-icon"/>
-          <span data-i18n="contact.linkedin">www.linkedin.com/in/adrien-bouyssou</span>
-        </a>
-        <a class="contact-link" href="https://maps.app.goo.gl/TjQkCv7dZHfuMgjj9" target="_blank">
-          <img src="./resources/images/location-dot-solid.svg" alt="Location icon" class="contact-icon"/>
-          <span data-i18n="contact.location">Toulouse Sud-Est, Occitanie, France</span>
-        </a>
-      </div>
-    </section>
-
-  <script src="./script.js" type="module"></script>
-</body>
+    </div>
+  </body>
 </html>
