@@ -11,11 +11,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const browserLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
   let initialLang = browserLang.startsWith("fr") ? "fr" : "en";
 
-  const contactLanding = document.getElementById("contact-landing");
-  const contactNav = document.getElementById("contact-nav");
-  contactLanding.onclick = () => goToId("contact");
-  contactNav.onclick = () => goToId("contact");
-  
   document.getElementById("work-nav").onclick = () => goToId("work");
   document.getElementById("projects-nav").onclick = () => goToId("projects");
   document.getElementById("personal-nav").onclick = () => goToId("personal");
