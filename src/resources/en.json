@@ -6,6 +6,10 @@
         "contact": "Contact me",
         "work": "My work"
     },
+    "global-menu": {
+        "links": "Links",
+        "resume": "Resume"
+    },
     "navbar": {
         "name": "Adrien BOUYSSOU",
         "work": "Work",
