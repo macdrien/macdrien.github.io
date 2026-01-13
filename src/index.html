@@ -44,6 +44,7 @@
     <!-- Meta Tags Generated with https://metatags.io -->
   </head>
   <body>
+    <button id="lang-switcher">FR</button>
     <header>
       <h1>Adrien Bouyssou</h1>
       <h2>Sidranie et Occimore</h2>
@@ -52,8 +53,8 @@
     <div class="menu">
       <div id="menu-icon"></div>
       <div class="menu-items">
-        <a href="index.html">Mes liens</a>
-        <a href="cv.html">Mon C.V</a>
+        <a href="index.html" data-i18n="global-menu.links">Mes liens</a>
+        <a href="cv.html" data-i18n="global-menu.resume">Mon C.V</a>
       </div>
     </div>
     <script>
@@ -151,6 +152,7 @@
 
       <div class="card">
         <iframe
+          title="Location map"
           class="card-image"
           src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d105135.98682199106!2d1.5597184886054554!3d43.540581402551275!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1767992251083!5m2!1sfr!2sfr"
           style="border: 0"
@@ -171,5 +173,6 @@
         <div class="card-action"></div>
       </div>
     </div>
+    <script src="./resources/scripts/i18n.js" type="module"></script>
   </body>
 </html>
