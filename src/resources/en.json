@@ -70,6 +70,11 @@
   },
   "index": {
     "links": {
+      "calendly": {
+        "action": "Book",
+        "content": "You want to exchange ideas in a professional or more informal setting, book a time for discussion.",
+        "title": "Calendly"
+      },
       "email": {
         "content": "adrien.bouyssou@pm.me",
         "title": "Email"
