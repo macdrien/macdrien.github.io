@@ -6,9 +6,10 @@
   --green-light: #41644A;
   --green: #0D4715;
   --orange: #E9762B;
+  --black: #181010;
 
   --background: var(--beige);
-  --color: black;
+  --color: var(--black);
   --primary: var(--green);
   --primary-lighter: var(--green-light);
   --secondary: var(--orange);
