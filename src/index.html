@@ -9,6 +9,10 @@
       href="./resources/images/occimore_logo.ico"
     />
     <link rel="stylesheet" href="./resources/styles/index.css" />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
 
     <!-- Primary Meta Tags -->
     <title>Adrien BOUYSSOU</title>
@@ -44,6 +48,8 @@
     <!-- Meta Tags Generated with https://metatags.io -->
   </head>
   <body>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
     <button id="lang-switcher">FR</button>
     <header>
       <h1 data-i18n="global.name">Adrien Bouyssou</h1>
@@ -100,6 +106,33 @@
           alt="Le logo Occimore"
         />
         <div class="card-body">
+          <h3 class="card-title" data-i18n="index.links.instagram.title">
+            Instagram
+          </h3>
+          <div class="card-content">
+            <p data-i18n="index.links.instagram.content">
+              Mon espace plus créatif et personnel
+            </p>
+          </div>
+          <div class="card-action">
+            <a
+              href="https://instagram.com/occimore"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button data-i18n="index.view-more">Aller voir</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-image"
+          src="resources/images/occimore_logo.png"
+          alt="Le logo Occimore"
+        />
+        <div class="card-body">
           <h3 class="card-title" data-i18n="index.links.github.title">
             GitHub
           </h3>
@@ -123,6 +156,33 @@
       <div class="card">
         <img
           class="card-image"
+          src="resources/images/calendly_logo.webp"
+          alt="Le logo de Calendly"
+        />
+        <div class="card-body">
+          <h3 class="card-title"
+              data-i18n="index.links.calendly.title">Calendly</h3>
+          <div class="card-content">
+            <p
+              data-i18n="index.links.calendly.content">
+              Envie ou besoin d'échanger dans un cadre professionnel ou plus
+              informel, nous pouvons prévoir un créneau de discussion.
+            </p>
+          </div>
+          <div class="card-action">
+            <button
+              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/adrien-bouyssou/nouvelle-reunion'});return false;"
+              data-i18n="index.links.calendly.action"
+            >
+              Programmer
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-image"
           src="resources/images/ace_printwear.jpg"
           alt="Je travaille dans l'atelier de Ace Printwear"
         />
@@ -132,33 +192,6 @@
             <p data-i18n="index.links.email.content">adrien.bouyssou@pm.me</p>
           </div>
           <div class="card-action"></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <img
-          class="card-image"
-          src="resources/images/occimore_logo.png"
-          alt="Le logo Occimore"
-        />
-        <div class="card-body">
-          <h3 class="card-title" data-i18n="index.links.instagram.title">
-            Instagram
-          </h3>
-          <div class="card-content">
-            <p data-i18n="index.links.instagram.content">
-              Mon espace plus créatif et personnel
-            </p>
-          </div>
-          <div class="card-action">
-            <a
-              href="https://instagram.com/occimore"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button data-i18n="index.view-more">Aller voir</button>
-            </a>
-          </div>
         </div>
       </div>
 

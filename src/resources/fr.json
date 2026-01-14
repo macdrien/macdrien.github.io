@@ -70,6 +70,11 @@
   },
   "index": {
     "links": {
+      "calendly": {
+        "action": "Réserver",
+        "content": "Envie d'échanger dans un cadre professionnel ou plus informel, réservez un créneau de discussion.",
+        "title": "Calendly"
+      },
       "email": {
         "content": "adrien.bouyssou@pm.me",
         "title": "Email"
