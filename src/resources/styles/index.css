@@ -139,11 +139,3 @@ button:hover {
         margin-bottom: 20px
     }
 }
-
-@media (min-width: 1900px) {
-  .card-list {
-    justify-content: center;
-    padding: 5px 0;
-    overflow-x: auto;
-  }
-}
