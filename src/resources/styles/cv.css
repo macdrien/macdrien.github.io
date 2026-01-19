@@ -4,7 +4,6 @@
 body {
   height: 100vh; /* fallback pour les navigateurs qui ne supportent pas dvh */
   height: 100dvh; /* utilise la hauteur dynamique du viewport sur mobile */
-  padding: 0 5px;
 }
 
 * {
@@ -73,9 +72,9 @@ em {
   font-weight: bold;
   color: var(--secondary);
 }
-
+ 
 section {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 h1 {
@@ -194,7 +193,11 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
+  /*gap: 2em;*/
+}
+
+.experience {
+  margin-bottom: 3em;
 }
 
 .experience .image {
