@@ -104,14 +104,14 @@ button {
   border-radius: 15px;
   font-size: 1.2em;
   border: none;
-  background-color: var(--primary-lighter);
+  background-color: var(--primary);
   box-shadow: 1px 1px 5px var(--color);
   color: var(--background);
   font-weight: bold;
 }
 
 button:hover {
-  color: var(--primary-lighter);
+  color: var(--primary);
   background-color: var(--background);
   transform: translate(1px, 1px);
 }

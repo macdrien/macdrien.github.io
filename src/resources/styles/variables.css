@@ -3,7 +3,6 @@
 
 :root {
   --white: #FFFFFF;
-  --green-light: #41644A;
   --green: #0D4715;
   --orange: #E9762B;
   --black: #181010;
@@ -11,7 +10,6 @@
   --background: var(--white);
   --color: var(--black);
   --primary: var(--green);
-  --primary-lighter: var(--green-light);
   --secondary: var(--orange);
 
   --card-width: 300px;

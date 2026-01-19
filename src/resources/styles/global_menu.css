@@ -5,7 +5,7 @@
 .menu {
   width: 70px;
   height: 70px;
-  background-color: var(--primary-lighter);
+  background-color: var(--primary);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -72,30 +72,13 @@
   color: var(--secondary);
 }
 
-@media (min-width: 768px) {
-  .menu {
-    top: 0;
-    bottom: unset;
-    right: 0;
-    left: unset;
-    border-radius: 0 0 0 100px;
-  }
-
-  #menu-icon {
-    top: 0;
-    left: unset;
-    right: 0;
-    bottom: unset;
-  }
-}
-
 #lang-switcher {
   position: fixed;
   bottom: 16px;
   right: 16px;
   z-index: 2000;
-  padding: 8px 16px;
-  font-weight: bold;
+  padding: 10px 16px;
+  font-weight: bolder;
   background-color: var(--secondary);
   color: var(--primary);
   border: none;
@@ -106,7 +89,7 @@
 }
 
 #lang-switcher:hover {
-  background-color: var(--primary-lighter);
+  background-color: var(--primary);
   color: var(--secondary);
   cursor: pointer;
   animation: lang-switcher-hover 100ms ease-in-out;
