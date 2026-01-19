@@ -116,10 +116,18 @@ button:hover {
   transform: translate(1px, 1px);
 }
 
-@media (min-width: 768px  ) {
+@media (min-width: 768px) {
     body {
         height: unset;
         padding: 0; 
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    h2 {
+      font-size: 2em;
     }
 
     .card-list {
