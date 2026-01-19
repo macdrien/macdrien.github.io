@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
 
 :root {
-  --beige: #EBE1D1;
+  --white: #FFFFFF;
   --green-light: #41644A;
   --green: #0D4715;
   --orange: #E9762B;
   --black: #181010;
 
-  --background: var(--beige);
+  --background: var(--white);
   --color: var(--black);
   --primary: var(--green);
   --primary-lighter: var(--green-light);
