@@ -92,7 +92,7 @@
   background-color: var(--primary);
   color: var(--secondary);
   cursor: pointer;
-  animation: lang-switcher-hover 100ms ease-in-out;
+  animation: lang-switcher-hover 150ms ease-in-out;
 }
 
 @keyframes lang-switcher-hover {
@@ -101,7 +101,7 @@
     color: var(--primary);
   }
   100% {
-    background: transparent;
+    background-color: var(--primary);
     color: var(--secondary);
   }
 }
