@@ -72,7 +72,7 @@
     "links": {
       "calendly": {
         "action": "Réserver",
-        "content": "Envie d'échanger dans un cadre professionnel ou plus informel, réservez un créneau de discussion.",
+        "content": "Envie d'échanger sur un sujet, réservez un créneau de discussion.",
         "title": "Calendly"
       },
       "email": {
@@ -80,15 +80,15 @@
         "title": "Email"
       },
       "github": {
-        "content": "Mon compte GitHub avec mes side-projects",
+        "content": "Mon compte GitHub avec mes side-projects et les tests que je rends public.",
         "title": "GitHub"
       },
       "instagram": {
-        "content": "Mon espace plus créatif et personnel",
+        "content": "Mon espace plus personnel dans lequel je partage escapades, réalisations sportives et ce tout ce qui m’intéresse.",
         "title": "Instagram"
       },
       "linkedin": {
-        "content": "Mes intéractions avec les autres professionnel.le.s",
+        "content": "Mes intéractions avec les autres professionnel.le.s. J’y partage mon évolution, mes conseils et avis sur le développement.",
         "title": "LinkedIn"
       },
       "location": {

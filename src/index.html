@@ -1,231 +1,135 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./resources/images/occimore_logo.ico"
-    />
-    <link rel="stylesheet" href="./resources/styles/index.css" />
-    <link
-      href="https://assets.calendly.com/assets/external/widget.css"
-      rel="stylesheet"
-    />
 
-    <!-- Primary Meta Tags -->
-    <title>Adrien BOUYSSOU</title>
-    <meta name="title" content="Adrien BOUYSSOU" />
-    <meta
-      name="description"
-      content="Mon portfolio qui référence mes expériences et mes projets"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./resources/images/occimore_logo.ico" />
+  <link rel="stylesheet" href="./resources/styles/index.css" />
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://macdrien.github.io/" />
-    <meta property="og:title" content="Adrien BOUYSSOU" />
-    <meta
-      property="og:description"
-      content="Mon portfolio qui référence mes exépriences et mes projets"
-    />
-    <meta property="og:image" content="./resources/images/occimore_logo.png" />
+  <!-- Primary Meta Tags -->
+  <title>Adrien BOUYSSOU</title>
+  <meta name="title" content="Adrien BOUYSSOU" />
+  <meta name="description" content="Mon portfolio qui référence mes expériences et mes projets" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://macdrien.github.io/" />
-    <meta property="twitter:title" content="Adrien BOUYSSOU" />
-    <meta
-      property="twitter:description"
-      content="Mon portfolio qui référence mes exépriences et mes projets"
-    />
-    <meta
-      property="twitter:image"
-      content="./resources/images/occimore_logo.png"
-    />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://macdrien.github.io/" />
+  <meta property="og:title" content="Adrien BOUYSSOU" />
+  <meta property="og:description" content="Mon portfolio qui référence mes exépriences et mes projets" />
+  <meta property="og:image" content="./resources/images/occimore_logo.png" />
 
-    <!-- Meta Tags Generated with https://metatags.io -->
-  </head>
-  <body>
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://macdrien.github.io/" />
+  <meta property="twitter:title" content="Adrien BOUYSSOU" />
+  <meta property="twitter:description" content="Mon portfolio qui référence mes exépriences et mes projets" />
+  <meta property="twitter:image" content="./resources/images/occimore_logo.png" />
 
-    <button id="lang-switcher">FR</button>
-    <header>
-      <h1 data-i18n="global.name">Adrien Bouyssou</h1>
-      <h2 data-i18n="index.names">Sidranie et Occimore</h2>
-    </header>
+  <!-- Meta Tags Generated with https://metatags.io -->
+</head>
 
-    <div class="menu">
-      <div id="menu-icon"></div>
-      <div class="menu-items">
-        <a href="index.html" data-i18n="global.menu.links">Mes liens</a>
-        <a href="cv.html" data-i18n="global.menu.resume">Mon C.V</a>
+<body>
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <button id="lang-switcher">FR</button>
+  <header>
+    <h1 data-i18n="global.name">Adrien Bouyssou</h1>
+    <h2 data-i18n="index.names">Sidranie et Occimore</h2>
+  </header>
+
+  <div class="menu">
+    <div id="menu-icon"></div>
+    <div class="menu-items">
+      <a href="index.html" data-i18n="global.menu.links">Mes liens</a>
+      <a href="cv.html" data-i18n="global.menu.resume">Mon C.V</a>
+    </div>
+  </div>
+  <script>
+    document
+      .querySelector("#menu-icon")
+      .addEventListener("click", function () {
+        document.querySelector(".menu").classList.toggle("opened");
+      });
+  </script>
+
+  <div class="card-list">
+
+    <div class="card image card-linkedin">
+      <img src="resources/images/adrien_bouyssou_on_innov_novembre_2017.jpg"
+        alt="Je fais ma présentation au salon On Innov'" />
+      <div class="card-body">
+        <h3 class="card-title" data-i18n="index.links.linkedin.title">
+          LinkedIn
+        </h3>
+        <p data-i18n="index.links.linkedin.content">
+          Mes intéractions avec les autres professionnel.le.s
+        </p>
+        <a href="https://www.linkedin.com/in/adrien-bouyssou/" target="_blank" rel="noopener noreferrer">
+          <button data-i18n="index.view-more">Visiter</button>
+        </a>
       </div>
     </div>
-    <script>
-      document
-        .querySelector("#menu-icon")
-        .addEventListener("click", function () {
-          document.querySelector(".menu").classList.toggle("opened");
-        });
-    </script>
 
-    <div class="card-list">
-      <div class="card">
-        <div class="card-image">
-          <img
-            src="resources/images/adrien_bouyssou_on_innov_novembre_2017.jpg"
-            alt="Je fais ma présentation au salon On Innov'"
-          />
-        </div>
-        <div class="card-body">
-          <h3 class="card-title" data-i18n="index.links.linkedin.title">
-            LinkedIn
-          </h3>
-          <div class="card-content">
-            <p data-i18n="index.links.linkedin.content">
-              Mes intéractions avec les autres professionnel.le.s
-            </p>
-          </div>
-          <div class="card-action">
-            <a
-              href="https://www.linkedin.com/in/adrien-bouyssou/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button data-i18n="index.view-more">Visiter</button>
-            </a>
-          </div>
-        </div>
+    <div class="card icon card-github">
+      <img src="resources/images/github-brands-solid.svg" alt="Le logo GitHub" />
+      <div class="card-body">
+        <h3 class="card-title" data-i18n="index.links.github.title">
+          GitHub
+        </h3>
+        <p data-i18n="index.links.github.content">
+          Mon compte GitHub avec mes side-projects
+        </p>
+        <a href="https://github.com/macdrien" target="_blank" rel="noopener noreferrer">
+          <button data-i18n="index.view-more">Visiter</button>
+        </a>
       </div>
+    </div>
 
-      <div class="card">
-        <div class="card-image">
-          <img
-            src="resources/images/occimore_logo.png"
-            alt="Le logo Occimore"
-          />
-        </div>
-        <div class="card-body">
-          <h3 class="card-title" data-i18n="index.links.instagram.title">
-            Instagram
-          </h3>
-          <div class="card-content">
-            <p data-i18n="index.links.instagram.content">
-              Mon espace plus créatif et personnel
-            </p>
-          </div>
-          <div class="card-action">
-            <a
-              href="https://instagram.com/occimore"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button data-i18n="index.view-more">Visiter</button>
-            </a>
-          </div>
-        </div>
+    <div class="card image card-instagram">
+      <img src="resources/images/occimore_logo.webp" alt="Le logo Occimore" />
+      <div class="card-body">
+        <h3 class="card-title" data-i18n="index.links.instagram.title">
+          Instagram
+        </h3>
+        <p data-i18n="index.links.instagram.content">
+          Mon espace plus créatif et personnel
+        </p>
+        <a href="https://instagram.com/occimore" target="_blank" rel="noopener noreferrer">
+          <button data-i18n="index.view-more">Visiter</button>
+        </a>
       </div>
+    </div>
 
-      <div class="card">
-        <div class="card-image">
-          <img
-            src="resources/images/occimore_logo.png"
-            alt="Le logo Occimore"
-          />
-        </div>
-        <div class="card-body">
-          <h3 class="card-title" data-i18n="index.links.github.title">
-            GitHub
-          </h3>
-          <div class="card-content">
-            <p data-i18n="index.links.github.content">
-              Mon compte GitHub avec mes side-projects
-            </p>
-          </div>
-          <div class="card-action">
-            <a
-              href="https://github.com/macdrien"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button data-i18n="index.view-more">Visiter</button>
-            </a>
-          </div>
-        </div>
+    <div class="card info card-email">
+      <img src="resources/images/envelope-solid.svg" alt="Une icone d'enveloppe" />
+      <div class="card-body">
+        <h3 class="card-title" data-i18n="index.links.email.title">Email</h3>
+        <p data-i18n="index.links.email.content">adrien.bouyssou@pm.me</p>
       </div>
+    </div>
 
-      <div class="card">
-        <div class="card-image">
-          <img
-            src="resources/images/calendly_logo.webp"
-            alt="Le logo de Calendly"
-          />
-        </div>
-        <div class="card-body">
-          <h3 class="card-title"
-              data-i18n="index.links.calendly.title">Calendly</h3>
-          <div class="card-content">
-            <p
-              data-i18n="index.links.calendly.content">
-              Envie ou besoin d'échanger dans un cadre professionnel ou plus
-              informel, nous pouvons prévoir un créneau de discussion.
-            </p>
-          </div>
-          <div class="card-action">
-            <button
-              onclick="Calendly.initPopupWidget({url: 'https://calendly.com/adrien-bouyssou/nouvelle-reunion'});return false;"
-              data-i18n="index.links.calendly.action"
-            >
-              Programmer
-            </button>
-          </div>
-        </div>
+    <div class="card icon card-calendly">
+      <img src="resources/images/calendar-solid.svg" alt="Le logo de Calendly" />
+      <div class="card-body">
+        <h3 class="card-title" data-i18n="index.links.calendly.title">Calendly</h3>
+        <p data-i18n="index.links.calendly.content">
+          Envie ou besoin d'échanger dans un cadre professionnel ou plus
+          informel, nous pouvons prévoir un créneau de discussion.
+        </p>
+        <button
+          onclick="Calendly.initPopupWidget({url: 'https://calendly.com/adrien-bouyssou/nouvelle-reunion'});return false;"
+          data-i18n="index.links.calendly.action">
+          Réserver
+        </button>
       </div>
+    </div>
 
-      <div class="card">
-        <div class="card-image">
-          <img
-            src="resources/images/ace_printwear.jpg"
-            alt="Je travaille dans l'atelier de Ace Printwear"
-          />
-        </div>
-        <div class="card-body">
-          <h3 class="card-title" data-i18n="index.links.email.title">Email</h3>
-          <div class="card-content">
-            <p data-i18n="index.links.email.content">adrien.bouyssou@pm.me</p>
-          </div>
-          <div class="card-action"></div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image">
-          <iframe
-            title="Location map"
-            src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d105135.98682199106!2d1.5597184886054554!3d43.540581402551275!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1767992251083!5m2!1sfr!2sfr"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div class="card-body">
-          <h3 class="card-title" data-i18n="index.links.location.title">
-            Toulousain
-          </h3>
-          <div class="card-content">
-            <p data-i18n="index.links.location.content">
-              Mon lieu de résidence et de travail :<br />
-              Toulouse, <br />le Lauragais toulousain,<br />
-              le Tarn et l'Aveyron
-            </p>
-          </div>
-        </div>
-        <div class="card-action"></div>
-      </div>
+    <div class="card map card-location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m10!1m3!1d130849.80745313036!2d1.5228352963003227!3d43.55662105134495!2m1!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1769089769703!5m2!1sfr!2sfr" width="230" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <script src="./resources/scripts/i18n.js" type="module"></script>
-  </body>
+</body>
+
 </html>
