@@ -45,7 +45,6 @@ button {
   color: var(--background);
   padding: 10px;
   border-radius: 20px;
-  box-shadow: 1px 1px 5px var(--primary);
 }
 
 button:hover {
@@ -61,7 +60,6 @@ button:hover {
   0% {
     background-color: var(--primary);
     color: var(--color);
-    box-shadow: var(--primary) 1px 1px 5px;
   }
   100% {
     color: var(--primary);
