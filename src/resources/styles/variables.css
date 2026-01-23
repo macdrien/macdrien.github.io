@@ -4,6 +4,7 @@
 :root {
   --white: #FFFFFF;
   --green: #0D4715;
+  --green-dark-transparent: rgb(6, 35, 10, 0.2);
   --orange: #E9762B;
   --black: #181010;
 
@@ -13,11 +14,9 @@
   --secondary: var(--orange);
 
   --card-width: 320px;
-  --card-info-width: 240px;
-  --card-map-width: 250px;
 
-  --card-info-height: 150px;
-  --card-icon-height: 200px;
+  --card-info-height: 175px;
+  --card-icon-height: 325px;
   --card-image-height: 450px;
   --card-map-height: 250px;
 

@@ -44,20 +44,23 @@ h2 {
 /* Generic card style */
 
 .card {
+  width: var(--card-width);
   margin-bottom: 20px;
 
   display: flex;
 
-  border: 2px solid var(--black);
+  border: 2px solid var(--green-dark-transparent);
   border-radius: 8px;
   justify-content: space-between;
+
+  padding: 24px 12px;
 }
 
 .card .card-body {
   width: 100%;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   justify-content: space-between;
 }
 
@@ -66,7 +69,7 @@ h2 {
   color: var(--primary);
 }
 
-.card p {
+.card p, .card p a {
   font-size: 1em;
   color: var(--color);
   text-decoration: none;
@@ -93,13 +96,10 @@ h2 {
 /* Specific card styles */
 
 .card.image {
-  width: var(--card-width);
   height: var(--card-image-height);
 
   flex-direction: column;
-  gap: 24px;
-
-  padding: 12px;
+  justify-content: space-between;
 }
 
 .card.image img {
@@ -110,26 +110,22 @@ h2 {
 }
 
 .card.icon {
-  width: var(--card-width);
+  align-items: center;
+  flex-direction: column;
   height: var(--card-icon-height);
-
-  align-items: flex-start;
-  gap: 24px;
-
-  padding: 12px;
 }
 
 .card.icon img {
-  height: 40px;
-  width: 40px;
+  height: 75px;
+  width: 75px;
 }
 
 .card.icon .card-body {
-  height: 100%;
+  gap: 12px;
+  justify-content: flex-end;
 }
 
 .card.info {
-  width: var(--card-info-width);
   height: var(--card-info-height);
 
   flex-direction: column;
@@ -144,14 +140,16 @@ h2 {
 
 .card.info .card-body {
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  gap: unset;
 }
 
 .card.map {
   height: var(--card-map-height);
-  width: var(--card-map-width);
 
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px;
 }
 
@@ -213,11 +211,13 @@ h2 {
     width: unset;
     height: unset;
     margin-bottom: 0;
+    text-align: center;
   }
 
   .card.image {
     flex-direction: row;
     align-items: center;
+    gap: 24px
   }
 
   .card.image img {
@@ -226,10 +226,11 @@ h2 {
 
   .card.image .card-body {
     height: 100%;
+    align-items: center;
+    gap: 8px;
   }
 
   .card.icon {
-    flex-direction: column;
     align-items: center;
   }
 
@@ -240,8 +241,11 @@ h2 {
 
   .card.icon .card-body {
     align-items: center;
-    justify-content: space-between;
     text-align: center;
+  }
+
+  .card.info {
+    justify-content: space-around;
   }
 
   .card.map {
@@ -285,11 +289,29 @@ h2 {
   }
 
   .card.image img {
-    height: 60%;
+    height: 90%;
+  }
+}
+
+@media (min-width: 1900px) {
+  .card.image img {
+    height: 100%;
+  }
+
+  .card-linkedin {
+    grid-area: 1 / 1 / 6 / 6;
+  }
+
+  .card-instagram {
+    grid-area: 6 / 6 / 11 / 11;
   }
 
   .card-github {
     grid-area: 6 / 4 / 10 / 6;
+  }
+
+  .card-email {
+    grid-area: 6 / 3 / 9 / 4;
   }
 
   .card-calendly {
@@ -297,12 +319,10 @@ h2 {
   }
 
   .card-location {
-    grid-area: 2 / 8 / 6 / 10;
+    grid-area: 2 / 8 / 6 / 9;
   }
-}
 
-@media (min-width: 1900px) {
-  .card.image img {
-    height: 100%;
+  .card.icon .card-body {
+    gap: 12px;
   }
 }

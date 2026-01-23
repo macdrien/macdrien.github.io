@@ -77,15 +77,15 @@
   bottom: 16px;
   right: 16px;
   z-index: 2000;
-  padding: 10px 16px;
   font-weight: bolder;
   background-color: var(--secondary);
   color: var(--primary);
   border: none;
-  border-radius: 20px;
+  border-radius: 12px;
   transition: background-color 0.2s, color 0.2s;
   box-shadow: none;
-  width: unset;
+  width: 50px;
+  height: 30px;
 }
 
 #lang-switcher:hover {
@@ -103,5 +103,13 @@
   100% {
     background-color: var(--primary);
     color: var(--secondary);
+  }
+}
+
+@media (min-width: 1280px) {
+  #lang-switcher {
+    width: 60px;
+    height: 40px;
+    font-size: 1em;
   }
 }
