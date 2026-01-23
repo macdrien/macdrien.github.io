@@ -64,7 +64,7 @@
   "global": {
     "menu": {
       "links": "Liens",
-      "resume": "C.V"
+      "resume": "C.V."
     },
     "name": "Adrien BOUYSSOU"
   },
@@ -84,16 +84,12 @@
         "title": "GitHub"
       },
       "instagram": {
-        "content": "Mon espace plus personnel dans lequel je partage escapades, réalisations sportives et ce tout ce qui m’intéresse.",
+        "content": "Mon espace personnel dans lequel je partage escapades, réalisations sportives et ce tout ce qui m’intéresse.",
         "title": "Instagram"
       },
       "linkedin": {
         "content": "Mes intéractions avec les autres professionnel.le.s. J’y partage mon évolution, mes conseils et avis sur le développement.",
         "title": "LinkedIn"
-      },
-      "location": {
-        "content": "Mon lieu de résidence et de travail :  \nToulouse,  \nle Lauragais toulousain,  \nle Tarn et l'Aveyron",
-        "title": "Toulouse"
       }
     },
     "names": "Sidranie et Occimore",
