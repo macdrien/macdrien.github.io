@@ -71,7 +71,7 @@
     "links": {
       "calendly": {
         "action": "Book",
-        "content": "You want to exchange about something, book a time to discuss.",
+        "content": "You want to exchange about something ? Book a time to discuss.",
         "title": "Calendly"
       },
       "email": {
