@@ -23,7 +23,8 @@
   --card-large-width: 600px;
   --card-large-height: 260px;
 
-  font-size: 16px;
+  --font-size: 16px;
+  font-size: var(--font-size);
 
   font-family: "Geologica", "Roboto", sans-serif;
   font-style: normal;

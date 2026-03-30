@@ -84,8 +84,10 @@
   border-radius: 12px;
   transition: background-color 0.2s, color 0.2s;
   box-shadow: none;
-  width: 50px;
-  height: 30px;
+  width: 60px;
+  height: 40px;
+  font-size: 1.2em;
+  padding: 0; /* Force padding to 0 to prevent border effects in pages */
 }
 
 #lang-switcher:hover {
