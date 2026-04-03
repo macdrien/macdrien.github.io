@@ -23,8 +23,8 @@ function goToId(id) {
   }
 }
 
-function updateNavNameText() {
+/*function updateNavNameText() {
   const navName = document.getElementsByClassName("name")[0];
   navName.innerText =
     document.documentElement.clientWidth > 500 ? "Adrien BOUYSSOU" : "A.B.";
-}
+}*/

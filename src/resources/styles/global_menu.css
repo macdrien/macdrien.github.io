@@ -73,6 +73,7 @@
 }
 
 #lang-switcher {
+  display: block;
   position: fixed;
   bottom: 16px;
   right: 16px;
@@ -90,7 +91,7 @@
   padding: 0; /* Force padding to 0 to prevent border effects in pages */
 }
 
-#lang-switcher:hover {
+button#lang-switcher:hover {
   background-color: var(--primary);
   color: var(--secondary);
   cursor: pointer;
@@ -109,7 +110,7 @@
 }
 
 @media (min-width: 1280px) {
-  #lang-switcher {
+  button#lang-switcher {
     width: 60px;
     height: 40px;
     font-size: 1em;
