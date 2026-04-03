@@ -1,6 +1,10 @@
 @import url("./variables.css");
 @import url("./global_menu.css");
 
+* {
+  font-size: 18px;
+}
+
 /* Button style */
 
 button {
@@ -57,7 +61,8 @@ button.colored .icon {
   border-radius: 24px;
   overflow: hidden;
   text-align: center;
-  padding: 32px;
+  padding: 16px;
+  margin-bottom: 25px;
 }
 
 .landingLogo {
