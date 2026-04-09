@@ -49,8 +49,8 @@
       <div class="menu">
         <div id="menu-icon"></div>
         <div class="menu-items">
-          <a href="index.html" data-i18n="global.menu.links">Mes liens</a>
-          <a href="cv.html" data-i18n="global.menu.resume" >Mon C.V</a>
+          <a class="menu-link" href="index.html" data-i18n="global.menu.links">Mes liens</a>
+          <a class="menu-link" href="cv.html" data-i18n="global.menu.resume" >Mon C.V</a>
         </div>
       </div>
       <script>
@@ -61,15 +61,15 @@
           });
       </script>
 
-      <div class="presentation">
+      <div class="card presentation">
         <img
             src="./resources/images/occimore_logo.png"
             alt="alt message"
             class="landingLogo"
           />
 
-          <h1 class="name">Adrien BOUYSSOU</h1>
-          <h2 class="function">Développeur Web Toulousain</h2>
+          <h1 class="name" data-i18n="global.name">Adrien BOUYSSOU</h1>
+          <h2 class="function" data-i18n="global.function">Développeur Web Toulousain</h2>
 
           <div class="buttons">
             <button>
@@ -87,108 +87,84 @@
           </div>
       </div>
 
-      <div class="about" data-i18n="cv.welcome.description">
-        Ingénieur logiciel depuis 4 ans, je travaille principalement avec
-        <strong data-i18n="cv.welcome.description.strong">Java</strong> et
-        JavaScript. J'ai rejoint Viveris Technologies (Toulouse, France)
-        après mon diplôme en 2021. J'y travaille comme ingénieur
-        full-stack. Je travaille également sur des side-projects sur mon
-        temps libre.
+      <div class="about">
+        <p data-i18n="cv.welcome.description">
+          Ingénieur logiciel depuis 4 ans, je travaille principalement avec <strong data-i18n="cv.welcome.description.strong">Java</strong> et
+          JavaScript. J'ai rejoint Viveris Technologies (Toulouse, France)
+          après mon diplôme en 2021. J'y travaille comme ingénieur
+          full-stack. Je travaille également sur des side-projects sur mon
+          temps libre.
+        </p>
       </div>
 
-<!--
-      <section class="welcomeSection">
-        <div class="presentation">
-          <div class="presentationText">
-            <h1 data-i18n="cv.welcome.title">
-              Bonjour, je suis <strong data-i18n="global.name">Adrien BOUYSSOU</strong>
-            </h1>
+      <div class="card skills">
+        <h2>Technologies</h2>
+        <ul class="tech-skills-list">
+          <li class="main-tech">Java</li>
+          <li class="main-tech">Spring Boot</li>
+          <li>JavaScript</li>
+          <li>VueJS</li>
+          <li>HTML/CSS</li>
+          <li>SQL</li>
+          <li>Git</li>
+        </ul>
+      </div>
 
-            <p class="welcomeSubtitle" data-i18n="cv.welcome.role">
-              Full-stack web developpeur chez Viveris Technologies
-            </p>
-            <p class="welcomeDescription" data-i18n="cv.welcome.description">
-              Ingénieur logiciel depuis 4 ans, je travaille principalement avec
-              <strong data-i18n="cv.welcome.description.strong">Java</strong> et
-              JavaScript. J'ai rejoint Viveris Technologies (Toulouse, France)
-              après mon diplôme en 2021. J'y travaille comme ingénieur
-              full-stack. Je travaille également sur des side-projects sur mon
-              temps libre.
-            </p>
-            <a href="./index.html">
-              <button
-                class="contactMe"
-                data-i18n="cv.welcome.contact"
-              >
-                Contactez-moi
-              </button>
-            </a>
-          </div>
-          <img
-            src="./resources/images/occimore_logo.png"
-            alt="alt message"
-            class="landingLogo"
-          />
-        </div>
+      <div class="pro-experiences">
+        <h2>Professionnel</h2>
 
-        <div class="checkout">
-          <div id="checkout-work" class="clickable">
-            <p data-i18n="cv.welcome.work">Mon travail</p>
-            <div class="bottomArrow" />
-          </div>
-        </div>
-      </section>
-
-      <section id="navbar">
-        <div id="clickable-name" class="name clickable" data-i18n="global.name">Adrien BOUYSSOU</div>
-        <nav>
-          <div id="work-nav" class="clickable" data-i18n="cv.navbar.work">
-            Travail
-          </div>
-          <div id="projects-nav" class="clickable" data-i18n="cv.navbar.projects">
-            Projets
-          </div>
-          <div id="personal-nav" class="clickable" data-i18n="cv.navbar.personal">
-            Personnel
-          </div>
-        </nav>
-      </section>
-
-      <section id="work">
-        <h2 data-i18n="cv.work.title">Mes expériences professionnelles</h2>
-        <div class="experiences">
-          <div class="experience">
-            <h3 data-i18n="cv.work.experience.1.title">Viveris Technologies</h3>
-            <img
-              class="image"
-              src="./resources/images/logo.svg"
-              alt="Viveris Technologies"
-            />
-            <div class="description">
-              <p data-i18n="cv.work.experience.1.text">
-                Depuis 2021, je travaille chez <em>Viveris Technologies</em>.
-                Basé à Toulouse, j'occupe le poste de développeur au sein d'une
-                équipe agile. Mon travail change au fil des jours, des semaines
-                et des sprints. Mes compétences principales restent le
-                développement web, en back-end avec une API principale en
-                <em>Spring</em>, et en front-end avec <em>VueJS</em> que nous
-                introduisons dans le projet. Mais, il m'arrive également de
-                travailler sur les bases de données, faire du réseau ou encore
-                de l'administration système et travailler sur la CI du projet.
-              </p>
+        <ul class="experiences">
+          <li class="card experience">
+            <div class="experience-header">
+              <img src="./resources/images/viveris-short.svg" alt="Viveris Technologies"/>
+              <div class="titles">
+                <h3>Ingénieur logiciel</h3>
+                <h4>Viveris Technologies</h4>
+              </div>
+              <p class="tag dates">21 - ..</p>
             </div>
-          </div>
-          <div class="experience">
-            <h3 data-i18n="cv.work.experience.2.title">
-              Alternance à Eiffage Energie Systèmes
-            </h3>
-            <img
-              class="image"
-              src="./resources/images/mulhouse.jpg"
-              alt="Alternance à Eiffage Energie Systèmes"
-            />
-            <div class="description">
-              <p data-i18n="cv.work.experience.2.text">
+            <p>
+              Depuis 2021, je travaille chez <em>Viveris Technologies</em>.
+              Basé à Toulouse, j'occupe le poste de développeur au sein d'une
+              équipe agile. Mon travail change au fil des jours, des semaines
+              et des sprints. Mes compétences principales restent le
+              développement web, en back-end avec une API principale en
+              <em>Spring</em>, et en front-end avec <em>VueJS</em> que nous
+              introduisons dans le projet. Mais, il m'arrive également de
+              travailler sur les bases de données, faire du réseau ou encore
+              de l'administration système et travailler sur la CI du projet.
+            </p>
+          </li>
+
+          <li class="card experience">
+            <div class="experience-header">
+              <img src="./resources/images/iut_rodez.jpg" alt="IUT de Rodez"/>
+              <div class="titles">
+                <h3>Enseignant vacataire</h3>
+                <h4>IUT de Rodez</h4>
+              </div>
+              <p class="tag dates">03/2026</p>
+            </div>
+            <p>
+              En mars 2026, j'ai eu l'opportunité de créer et proposer un cours de
+              <em>VueJS</em> aux étudiants de 2ème année BUT Informatique.<br/>
+              Cette expérience m'a permis de remettre à plat mes connaissances pour
+              pouvoir les présenter aux élèves. J'ai présenté aux élèves:
+              5 cours magistraux d'une heure et 5 travaux dirigés d'une heure et quart
+              chacun. Ces enseignements inclus 2 évaluations.
+            </p>
+          </li>
+
+          <li class="card experience">
+            <div class="experience-header">
+              <img src="./resources/images/eiffage.svg" alt="Eiffage"/>
+              <div class="titles">
+                <h3>Alternant ingénieur</h3>
+                <h4>Eiffage Energie Systèmes</h4>
+              </div>
+              <p class="tag dates">18 - 21</p>
+            </div>
+            <p>
                 De 2018 à 2021, j'ai fait une école d'ingénieur en alternance.
                 Je travaillais chez <em>Eiffage-Energie-Systèmes</em> et
                 j'étudiais au sein de l'<em>UTBM</em> (Université de Technologie
@@ -198,97 +174,101 @@
                 études, mon université était localisée à Belfort, proche de
                 Mulhouse.
               </p>
+          </li>
+
+          <li class="card experience">
+            <div class="experience-header">
+              <img src="./resources/images/iut_rodez.jpg" alt="IUT de Rodez"/>
+              <div class="titles">
+                <h3>DUT Informatique</h3>
+                <h4>IUT de Rodez</h4>
+              </div>
+              <p class="tag dates">16 - 18</p>
             </div>
-          </div>
-          <div class="experience">
-            <h3 data-i18n="cv.work.experience.3.title">DUT Informatique</h3>
-            <img
-              class="image"
-              src="./resources/images/iut_rodez.jpg"
-              alt="DUT Informatique"
-            />
-            <div class="description">
-              <p data-i18n="cv.work.experience.3.text">
-                J'ai commencé mes études supérieures par un DUT en Informatique.
-                J'ai passé ce diplôme de 2016 à 2018 à l'IUT de Rodez
-                (Université Toulouse 1 Capitole). Cela m'a permi de m'initier
-                correctement à l'informatique, notamment en <em>Java</em>. Cette
-                formation m'a également apporté beaucoup de bases solides,
-                notamment en base de données relationnelles.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="projects">
-        <h2 data-i18n="cv.projects.title">Mes projets personnels</h2>
-        <div class="experiences">
-          <div class="experience">
-            <h3>
+            <p>
+              J'ai commencé mes études supérieures par un DUT en Informatique.
+              J'ai passé ce diplôme de 2016 à 2018 à l'IUT de Rodez
+              (Université Toulouse 1 Capitole). Cela m'a permi de m'initier
+              correctement à l'informatique, notamment en <em>Java</em>. Cette
+              formation m'a également apporté beaucoup de bases solides,
+              notamment en base de données relationnelles.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="projects">
+        <h2>Projets</h2>
+        <ul class="experiences">
+          <li class="card experience">
+            <div class="experience-header">
+              <img
+                src="./resources/images/github-brands-solid.svg"
+                alt="GitHub"
+              />
+              <div class="titles">
+                <h3>GitHub</h3>
+              </div>
               <a
                 href="https://github.com/macdrien"
                 target="_blank"
-                data-i18n="cv.projects.experience.1.title"
-                >GitHub</a
               >
-            </h3>
-            <img
-              class="image"
-              src="./resources/images/github-brands-solid.svg"
-              alt="GitHub"
-            />
-            <div class="description">
-              <p data-i18n="cv.projects.experience.1.text">
-                Lorsque je développe un projet personnel, je le versionne
-                systématiquement vie l'incontournable <strong>Git</strong> sur
-                <strong>GitHub</strong>. Cela me permet de le sauvegarder, de
-                retrouver tous mes projets partour, et surtout, comme c'est le
-                cas pour ce portfolio, de déployer mes projets statiques sur
-                GitHub Pages facilement grâce aux GitHub Actions.
-              </p>
+                <button class="tag">Visiter</button>
+              </a>
             </div>
-          </div>
-          <div class="experience">
-            <h3>
+            <p>
+              Lorsque je développe un projet personnel, je le versionne
+              systématiquement vie l'incontournable <strong>Git</strong> sur
+              <strong>GitHub</strong>. Cela me permet de le sauvegarder, de
+              retrouver tous mes projets partour, et surtout, comme c'est le
+              cas pour ce portfolio, de déployer mes projets statiques sur
+              GitHub Pages facilement grâce aux GitHub Actions.
+            </p>
+          </li>
+
+          <li class="card experience">
+            <div class="experience-header">
+              <img
+                src="./resources/images/link.svg"
+                alt="Liens portfolio"
+              />
+              <div class="titles">
+                <h3>Portfolio</h3>
+              </div>
               <a
                 href="https://macdrien.github.io"
                 target="_blank"
-                data-i18n="cv.projects.experience.2.title"
-                >Portfolio</a
               >
-            </h3>
-            <img
-              class="image"
-              src="./resources/images/link.svg"
-              alt="Portfolio"
-            />
-            <div class="description">
-              <p data-i18n="cv.projects.experience.2.text">
-                Mon <strong>portfolio</strong> est l'un de mes projets.
-                Initialement réalisé en ReactJS, je l'ai refait, à l'identique,
-                en <strong>JavaScript</strong> vanilla. Ce changement me permet
-                de me rapprocher au plus des technologies pures afin d'utiliser
-                les outils qui correspondent au mieux à chaque projet.
-              </p>
+                <button class="tag">Visiter</button>
+              </a>
             </div>
-          </div>
-          <div class="experience">
-            <h3>
+            <p>
+              Mon <strong>portfolio</strong> est l'un de mes projets.
+              Initialement réalisé en ReactJS, je l'ai refait, à l'indentique,
+              en <strong>JavaScript</strong> vanilla. Ce changement me permet
+              de me rapprocher au plus des technologies pures afin d'utiliser
+              les outils qui correspondent au mieux à chaque projet.
+            </p>
+          </li>
+          
+          <li class="card experience">
+            <div class="experience-header">
+              <img
+                src="./resources/images/link.svg"
+                alt="Liens portfolio"
+              />
+              <div class="titles">
+                <h3>Tournament-Manager</h3>
+              </div>
               <a
                 href="https://macdrien.github.io/tournament-manager-frontend"
                 target="_blank"
-                data-i18n="cv.projects.experience.3.title"
-                >Tournament Manager</a
               >
-            </h3>
-            <img
-              class="image"
-              src="./resources/images/link.svg"
-              alt="Tournament Manager"
-            />
-            <div class="description">
-              <p data-i18n="cv.projects.experience.3.text">
-                Le
+                <button class="tag">Visiter</button>
+              </a>
+            </div>
+            <p>
+              Le
                 <strong
                   ><a
                     href="https://macdrien.github.io/tournament-manager-frontend"
@@ -306,59 +286,62 @@
                 choix d'un thème clair et un sombre. Je considère sa v1
                 terminée, mais je garde ce projet de côté pour y ajouter de
                 nombreuses foncitonnalités, la persistence de données en tête.
-              </p>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="personal">
+        <h2>Personnel</h2>
+
+        <ul class="experiences">
+          <li class="card experience">
+            <div class="experience-header">
+              <img
+                src="./resources/images/location-dot-solid.svg"
+                alt="Position mark"
+              />
+              <div class="titles">
+                <h3>Immersion en Angleterre</h3>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section id="personal">
-        <h2 data-i18n="cv.personal.title">Mes expériences personnelles</h2>
-        <div class="experiences">
-          <div class="experience">
-            <h3 data-i18n="cv.personal.experience.1.title">
-              Immersion en Angleterre
-            </h3>
-            <img
-              class="image"
-              src="./resources/images/ace_printwear.jpg"
-              alt="Immersion en Angleterre"
-            />
-            <div class="description">
-              <p data-i18n="cv.personal.experience.1.text">
-                L'obtention d'un diplôme d'ingénieur nécessite une expérience de
-                douze semaines à l'international. Par conséquent, je suis parti
-                travailler trois mois, sur l'été 2019, chez
-                <em>Ace Printwear</em> une, petite société à
-                <em>Torquay</em> (Devon, UK), qui personnalise des textiles
-                grâce à du flocage, principalement pour les nombreux touristes
-                de l'English Riviera et les entreprises locales. Cette
-                expérience m'a permi d'améliorer considérablement mon niveau en
-                anglais jusqu'au B2 nécessaire à l'obtention du diplôme.
-              </p>
+            <p>
+              L'obtention d'un diplôme d'ingénieur nécessite une expérience de
+              douze semaines à l'international. Par conséquent, je suis parti
+              travailler trois mois, sur l'été 2019, chez
+              <em>Ace Printwear</em> une, petite société à
+              <em>Torquay</em> (Devon, UK), qui personnalise des textiles
+              grâce à du flocage, principalement pour les nombreux touristes
+              de l'English Riviera et les entreprises locales. Cette
+              expérience m'a permi d'améliorer considérablement mon niveau en
+              anglais jusqu'au B2 nécessaire à l'obtention du diplôme.
+            </p>
+          </li>
+
+          <li class="card experience">
+            <div class="experience-header">
+              <img
+                src="./resources/images/iut_rodez.jpg"
+                alt="Logo IUT de Rodez"
+              />
+              <div class="titles">
+                <h3>On Innov'</h3>
+                <h4>Particiption au concours</h4>
+              </div>
             </div>
-          </div>
-          <div class="experience">
-            <h3 data-i18n="cv.personal.experience.2.title">Concours On Innov'</h3>
-            <img
-              class="image"
-              src="./resources/images/adrien_bouyssou_on_innov_novembre_2017.jpg"
-              alt="Concours On Innov'"
-            />
-            <div class="description">
-              <p data-i18n="cv.personal.experience.2.text">
+            <p>
                 En novembre 2017, j'ai participé au concours organisé dans le
                 cadre du salon <em>On Innov'</em> de Onet-Le-Chateau, dans
                 l'agglomération ruthénoise. Avec l'équipe KAVAM, nous avons
                 présenté le concept de notre jeu mobile sur le thème de
                 l'économie d'énergie. Notre présentation nous a vallu la
                 première place de ce concours.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    -->
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
+
     <script src="./resources/scripts/cv.js" type="module"></script>
     <script src="./resources/scripts/i18n.js" type="module"></script>
   </body>

@@ -59,16 +59,15 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
 
+.menu-link, .menu-link:visited {
+  text-decoration: none;
+  color: var(--background);
   font-size: 3em;
 }
 
-.menu-items a, .menu-items a:visited {
-  text-decoration: none;
-  color: var(--background);
-}
-
-.menu-items a:hover {
+.menu-link:hover {
   color: var(--secondary);
 }
 
@@ -81,14 +80,13 @@
   font-weight: bolder;
   background-color: var(--secondary);
   color: var(--primary);
-  border: none;
+  border: 5px solid var(--green);
   border-radius: 12px;
   transition: background-color 0.2s, color 0.2s;
   box-shadow: none;
   width: 60px;
-  height: 40px;
   font-size: 1.2em;
-  padding: 0; /* Force padding to 0 to prevent border effects in pages */
+  padding: 5px;
 }
 
 button#lang-switcher:hover {

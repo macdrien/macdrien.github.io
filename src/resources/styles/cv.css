@@ -3,9 +3,56 @@
 
 * {
   font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
-/* Button style */
+.main {
+  margin-top: 32px;
+  margin-bottom: 75px;
+}
+
+.main > div:not(.menu) {
+  margin-bottom: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 2em;
+  color: var(--orange);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: var(--green);
+  margin: 8px 0;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+strong, em {
+  color: var(--orange);
+}
+
+strong a, em a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.card {
+  border: 5px solid var(--green);
+  border-radius: 24px;
+  overflow: hidden;
+  text-align: center;
+  padding: 16px;
+}
 
 button {
   border: 3px solid var(--green);
@@ -54,15 +101,27 @@ button.colored .icon {
   fill: var(--white);
 }
 
-/* End of button style */
+.tag {
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 32px;
+  width: 32px;
+  padding: 8px;
+}
 
-.presentation {
-  border: 3px solid var(--green);
-  border-radius: 24px;
-  overflow: hidden;
-  text-align: center;
-  padding: 16px;
-  margin-bottom: 25px;
+button.tag {
+  border: none;
+  font-size: unset;
+  display: block;
+  width: fit-content;
+}
+
+.presentation,
+.skills,
+.pro-experiences,
+.projects,
+.personal {
+  margin: 16px;
 }
 
 .landingLogo {
@@ -70,16 +129,72 @@ button.colored .icon {
 }
 
 .name {
-  font-size: 2em;
   color: var(--orange);
 }
 
 .function {
   font-size: 2.5em;
-  color: var(--green);
+  margin-bottom: 32px;
 }
 
 .presentation .buttons {
   display: flex;
   justify-content: space-evenly;
+}
+
+.about {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 32px 16px;
+}
+
+.tech-skills-list {
+  margin: 32px 16px 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  text-align: left;
+}
+
+.tech-skills-list .main-tech {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--orange);
+}
+
+/* Experiences */
+
+.experience {
+  border-width: 3px;
+  margin-top: 24px;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.experience-header img {
+  width: 32px;
+  flex-basis: 32px;
+  flex: 0 0 32px;
+}
+
+.experience-header .titles {
+  flex: 1 0 auto;
+  text-align: left;
+}
+
+.titles h4 {
+  color: var(--grey);
+  font-weight: normal;
+  font-style: italic;
+}
+
+.experience-header .dates {
+  flex: 0 0 64px;
+  font-size: 0.8em;
 }
