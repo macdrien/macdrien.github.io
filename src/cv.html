@@ -49,8 +49,8 @@
       <div class="menu">
         <div id="menu-icon"></div>
         <div class="menu-items">
-          <a class="menu-link" href="index.html" data-i18n="global.menu.links">Mes liens</a>
-          <a class="menu-link" href="cv.html" data-i18n="global.menu.resume" >Mon C.V</a>
+          <a class="menu-link" href="index.html" data-i18n="global.menu.links">Liens</a>
+          <a class="menu-link" href="cv.html" data-i18n="global.menu.resume" >C.V.</a>
         </div>
       </div>
       <script>
@@ -76,20 +76,22 @@
               <svg class="icon">
                 <use href="resources/images/download-solid.svg"></use>
               </svg>
-              C.V.
+              <span data-i18n="global.menu.resume">C.V.</span>
             </button>
-            <button class="colored">
-              <svg class="icon">
-                <use href="resources/images/link.svg"></use>
-              </svg>
-              Liens
-            </button>
+            <a href="index.html">
+              <button class="colored">
+                <svg class="icon">
+                  <use href="resources/images/link.svg"></use>
+                </svg>
+                <span data-i18n="global.menu.links">Liens</span>
+              </button>
+            </a>
           </div>
       </div>
 
       <div class="about">
-        <p data-i18n="cv.welcome.description">
-          Ingénieur logiciel depuis 4 ans, je travaille principalement avec <strong data-i18n="cv.welcome.description.strong">Java</strong> et
+        <p data-i18n="cv.about">
+          Ingénieur logiciel depuis 5 ans, je travaille principalement avec <strong data-i18n="cv.welcome.description.strong">Java</strong> et
           JavaScript. J'ai rejoint Viveris Technologies (Toulouse, France)
           après mon diplôme en 2021. J'y travaille comme ingénieur
           full-stack. Je travaille également sur des side-projects sur mon
@@ -98,7 +100,7 @@
       </div>
 
       <div class="card skills">
-        <h2>Technologies</h2>
+        <h2 data-i18n="cv.technologies.title">Technologies</h2>
         <ul class="tech-skills-list">
           <li class="main-tech">Java</li>
           <li class="main-tech">Spring Boot</li>
@@ -111,19 +113,19 @@
       </div>
 
       <div class="pro-experiences">
-        <h2>Professionnel</h2>
+        <h2 data-i18n="cv.professional.title">Professionnel</h2>
 
         <ul class="experiences">
           <li class="card experience">
             <div class="experience-header">
               <img src="./resources/images/viveris-short.svg" alt="Viveris Technologies"/>
               <div class="titles">
-                <h3>Ingénieur logiciel</h3>
-                <h4>Viveris Technologies</h4>
+                <h3 data-i18n="cv.professional.experience.viveris.job">Ingénieur logiciel</h3>
+                <h4 data-i18n="cv.professional.experience.viveris.company">Viveris Technologies</h4>
               </div>
-              <p class="tag dates">21 - ..</p>
+              <p class="tag dates" data-i18n="cv.professional.experience.viveris.date">21 - ..</p>
             </div>
-            <p>
+            <p data-i18n="cv.professional.experience.viveris.text">
               Depuis 2021, je travaille chez <em>Viveris Technologies</em>.
               Basé à Toulouse, j'occupe le poste de développeur au sein d'une
               équipe agile. Mon travail change au fil des jours, des semaines
@@ -140,14 +142,14 @@
             <div class="experience-header">
               <img src="./resources/images/iut_rodez.jpg" alt="IUT de Rodez"/>
               <div class="titles">
-                <h3>Enseignant vacataire</h3>
-                <h4>IUT de Rodez</h4>
+                <h3 data-i18n="cv.professional.experience.iut-teacher.job">Enseignant vacataire</h3>
+                <h4 data-i18n="cv.professional.experience.iut-teacher.company">IUT de Rodez</h4>
               </div>
-              <p class="tag dates">03/2026</p>
+              <p class="tag dates" data-i18n="cv.professional.experience.iut-teacher.date">03/2026</p>
             </div>
-            <p>
+            <p data-i18n="cv.professional.experience.iut-teacher.text">
               En mars 2026, j'ai eu l'opportunité de créer et proposer un cours de
-              <em>VueJS</em> aux étudiants de 2ème année BUT Informatique.<br/>
+              <em>VueJS</em> aux étudiants de 2ème année BUT Informatique.
               Cette expérience m'a permis de remettre à plat mes connaissances pour
               pouvoir les présenter aux élèves. J'ai présenté aux élèves:
               5 cours magistraux d'une heure et 5 travaux dirigés d'une heure et quart
@@ -159,12 +161,12 @@
             <div class="experience-header">
               <img src="./resources/images/eiffage.svg" alt="Eiffage"/>
               <div class="titles">
-                <h3>Alternant ingénieur</h3>
-                <h4>Eiffage Energie Systèmes</h4>
+                <h3 data-i18n="cv.professional.experience.eiffage.job">Alternant ingénieur</h3>
+                <h4 data-i18n="cv.professional.experience.eiffage.company">Eiffage et UTBM</h4>
               </div>
-              <p class="tag dates">18 - 21</p>
+              <p class="tag dates" data-i18n="cv.professional.experience.eiffage.date">18 - 21</p>
             </div>
-            <p>
+            <p data-i18n="cv.professional.experience.eiffage.text">
                 De 2018 à 2021, j'ai fait une école d'ingénieur en alternance.
                 Je travaillais chez <em>Eiffage-Energie-Systèmes</em> et
                 j'étudiais au sein de l'<em>UTBM</em> (Université de Technologie
@@ -180,12 +182,12 @@
             <div class="experience-header">
               <img src="./resources/images/iut_rodez.jpg" alt="IUT de Rodez"/>
               <div class="titles">
-                <h3>DUT Informatique</h3>
-                <h4>IUT de Rodez</h4>
+                <h3 data-i18n="cv.professional.experience.dut.job">DUT Informatique</h3>
+                <h4 data-i18n="cv.professional.experience.dut.company">IUT de Rodez</h4>
               </div>
-              <p class="tag dates">16 - 18</p>
+              <p class="tag dates" data-i18n="cv.professional.experience.dut.date">16 - 18</p>
             </div>
-            <p>
+            <p data-i18n="cv.professional.experience.dut.text">
               J'ai commencé mes études supérieures par un DUT en Informatique.
               J'ai passé ce diplôme de 2016 à 2018 à l'IUT de Rodez
               (Université Toulouse 1 Capitole). Cela m'a permi de m'initier
@@ -198,7 +200,7 @@
       </div>
 
       <div class="projects">
-        <h2>Projets</h2>
+        <h2 data-i18n="cv.projects.title">Projets</h2>
         <ul class="experiences">
           <li class="card experience">
             <div class="experience-header">
@@ -207,16 +209,16 @@
                 alt="GitHub"
               />
               <div class="titles">
-                <h3>GitHub</h3>
+                <h3 data-i18n="cv.projects.experience.github.title">GitHub</h3>
               </div>
               <a
                 href="https://github.com/macdrien"
                 target="_blank"
               >
-                <button class="tag">Visiter</button>
+                <button class="tag" data-i18n="cv.projects.experience.github.action">Visiter</button>
               </a>
             </div>
-            <p>
+            <p data-i18n="cv.projects.experience.github.text">
               Lorsque je développe un projet personnel, je le versionne
               systématiquement vie l'incontournable <strong>Git</strong> sur
               <strong>GitHub</strong>. Cela me permet de le sauvegarder, de
@@ -233,16 +235,16 @@
                 alt="Liens portfolio"
               />
               <div class="titles">
-                <h3>Portfolio</h3>
+                <h3 data-i18n="cv.projects.experience.portfolio.title">Portfolio</h3>
               </div>
               <a
                 href="https://macdrien.github.io"
                 target="_blank"
               >
-                <button class="tag">Visiter</button>
+                <button class="tag" data-i18n="cv.projects.experience.portfolio.action">Visiter</button>
               </a>
             </div>
-            <p>
+            <p data-i18n="cv.projects.experience.portfolio.text">
               Mon <strong>portfolio</strong> est l'un de mes projets.
               Initialement réalisé en ReactJS, je l'ai refait, à l'indentique,
               en <strong>JavaScript</strong> vanilla. Ce changement me permet
@@ -258,16 +260,16 @@
                 alt="Liens portfolio"
               />
               <div class="titles">
-                <h3>Tournament-Manager</h3>
+                <h3 data-i18n="cv.projects.experience.tournament-manager.title">Tournament-Manager</h3>
               </div>
               <a
                 href="https://macdrien.github.io/tournament-manager-frontend"
                 target="_blank"
               >
-                <button class="tag">Visiter</button>
+                <button class="tag" data-i18n="cv.projects.experience.tournament-manager.action">Visiter</button>
               </a>
             </div>
-            <p>
+            <p data-i18n="cv.projects.experience.tournament-manager.text">
               Le
                 <strong
                   ><a
@@ -292,7 +294,7 @@
       </div>
 
       <div class="personal">
-        <h2>Personnel</h2>
+        <h2 data-i18n="cv.personal.title">Personnel</h2>
 
         <ul class="experiences">
           <li class="card experience">
@@ -302,10 +304,10 @@
                 alt="Position mark"
               />
               <div class="titles">
-                <h3>Immersion en Angleterre</h3>
+                <h3 data-i18n="cv.personal.experience.uk.title">Immersion en Angleterre</h3>
               </div>
             </div>
-            <p>
+            <p data-i18n="cv.personal.experience.uk.text">
               L'obtention d'un diplôme d'ingénieur nécessite une expérience de
               douze semaines à l'international. Par conséquent, je suis parti
               travailler trois mois, sur l'été 2019, chez
@@ -325,11 +327,11 @@
                 alt="Logo IUT de Rodez"
               />
               <div class="titles">
-                <h3>On Innov'</h3>
-                <h4>Particiption au concours</h4>
+                <h3 data-i18n="cv.personal.experience.on-innov.title">On Innov'</h3>
+                <h4 data-i18n="cv.personal.experience.on-innov.subtitle">Particiption au concours</h4>
               </div>
             </div>
-            <p>
+            <p data-i18n="cv.personal.experience.on-innov.text">
                 En novembre 2017, j'ai participé au concours organisé dans le
                 cadre du salon <em>On Innov'</em> de Onet-Le-Chateau, dans
                 l'agglomération ruthénoise. Avec l'équipe KAVAM, nous avons
@@ -342,7 +344,6 @@
       </div>
     </div>
 
-    <script src="./resources/scripts/cv.js" type="module"></script>
     <script src="./resources/scripts/i18n.js" type="module"></script>
   </body>
 </html>
