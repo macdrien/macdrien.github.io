@@ -5,8 +5,10 @@ import i18next from "https://cdn.jsdelivr.net/npm/i18next@23.10.0/dist/esm/i18ne
 document.addEventListener("DOMContentLoaded", async () => {
   const translations = await loadTranslations();
   
-  const browserLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
-  let initialLang = browserLang.startsWith("fr") ? "fr" : "en";
+  const savedLanguage = window.localStorage.getItem('language');
+  const browserLanguage = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+  const defaultLanguage = browserLanguage.startsWith("fr") ? "fr" : "en";
+  let initialLang = savedLanguage ?? defaultLanguage;
 
   const langSwitcher = document.getElementById("lang-switcher");
   let currentLang = initialLang;
@@ -15,6 +17,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     currentLang = currentLang === "fr" ? "en" : "fr";
     langSwitcher.textContent = currentLang === "fr" ? "EN" : "FR";
     await i18next.changeLanguage(currentLang);
+    window.localStorage.setItem('language', currentLang);
     updateLabelsFromI18n();
   };
 
