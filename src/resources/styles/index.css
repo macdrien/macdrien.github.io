@@ -49,7 +49,7 @@ h2 {
 
   display: flex;
 
-  border: 2px solid var(--green-dark-transparent);
+  border: 2px solid var(--green);
   border-radius: 8px;
   justify-content: space-between;
 

@@ -3,9 +3,11 @@
 
 :root {
   --white: #FFFFFF;
-  --green: #0D4715;
-  --green-dark-transparent: rgb(6, 35, 10, 0.2);
-  --orange: #E9762B;
+  /* Light colors are not used for now */
+  /*--green-light: #003d18c0;*/
+  --green: #003D18;
+  /*--orange-light: #ff600aa0;*/
+  --orange: #FF600A;
   --black: #181010;
   --grey: #808080;
 
