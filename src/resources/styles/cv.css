@@ -22,15 +22,15 @@ li {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   color: var(--orange);
-  margin: 16px 0;
+  margin: 32px 0 16;
 }
 
 h2 {
   font-size: 1.5em;
   color: var(--green);
-  margin: 8px 0;
+  margin: 16px 0 32px;
 }
 
 a {
@@ -60,13 +60,13 @@ button {
   border-radius: 8px;
   box-shadow: none;
   font-weight: bold;
-  font-size: 1.75em;
+  font-size: 1em;
 
   padding: 8px;
 
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 button * {
@@ -132,15 +132,6 @@ button.tag {
 
 .landingLogo {
   width: 50vw;
-}
-
-.name {
-  color: var(--orange);
-}
-
-.function {
-  font-size: 2.5em;
-  margin-bottom: 32px;
 }
 
 .presentation .buttons {
