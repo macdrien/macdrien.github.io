@@ -27,10 +27,17 @@ h1 {
   margin: 32px 0 16;
 }
 
+h2, h3, h4, h5, h6 {
+  color: var(--green);
+}
+
 h2 {
   font-size: 1.5em;
-  color: var(--green);
   margin: 16px 0 32px;
+}
+
+h3 {
+  font-size: 1.25em;
 }
 
 a {
@@ -183,7 +190,7 @@ button.tag {
   text-align: left;
 }
 
-.titles h4 {
+.titles h5 {
   color: var(--grey);
   font-weight: normal;
   font-style: italic;
@@ -195,6 +202,10 @@ button.tag {
 }
 
 @media screen and (min-width: 1080px) {
+  h1 {
+    font-size: 3em;
+  }
+
   h2 {
     font-size: 2em;
   }
@@ -225,7 +236,7 @@ button.tag {
   }
 
   .landingLogo {
-    width: 75%;
+    width: 50%;
   }
 
   .main {
