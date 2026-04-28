@@ -48,7 +48,7 @@ strong a, em a {
 }
 
 .card {
-  border: 5px solid var(--green);
+  border: 3px solid var(--green);
   border-radius: 24px;
   overflow: hidden;
   text-align: center;
@@ -162,7 +162,6 @@ button.tag {
 /* Experiences */
 
 .experience {
-  border-width: 3px;
   margin-top: 24px;
 }
 
