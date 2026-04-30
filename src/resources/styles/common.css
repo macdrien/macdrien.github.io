@@ -33,3 +33,11 @@ strong a, em a {
     color: inherit;
     text-decoration: underline;
 }
+
+.card {
+    border: 3px solid var(--green);
+    border-radius: 24px;
+    padding: 24px 12px;
+    overflow: hidden;
+    text-align: center;
+}

@@ -28,14 +28,6 @@ h3 {
   font-size: 1.25em;
 }
 
-.card {
-  border: 3px solid var(--green);
-  border-radius: 24px;
-  overflow: hidden;
-  text-align: center;
-  padding: 16px;
-}
-
 button {
   border: 3px solid var(--green);
   border-radius: 8px;
