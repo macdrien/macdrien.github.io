@@ -58,12 +58,6 @@ header {
 .card button {
   width: 100px;
   height: 50px;
-  border-radius: 15px;
-  font-size: 1.2em;
-  border: none;
-  background-color: var(--primary);
-  color: var(--background);
-  font-weight: bold;
 }
 
 .card button:hover {

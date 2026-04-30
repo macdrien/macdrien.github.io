@@ -34,6 +34,50 @@ strong a, em a {
     text-decoration: underline;
 }
 
+/*region Button */
+
+button {
+    border: 3px solid var(--green);
+    border-radius: 16px;
+    font-size: 1em;
+    box-shadow: none;
+    font-weight: bold;
+    padding: 8px;
+    cursor: pointer;
+}
+
+button * {
+    font-size: inherit;
+}
+
+button, button:hover {
+    transition: background-color 0.15s, color 0.15s;
+}
+
+button, button.outline:hover {
+    color: var(--white);
+    background-color: var(--green);
+}
+
+button:hover, button.outline {
+    background-color: transparent;
+    color: var(--green);
+}
+
+button.primary, button.primary.outline {
+    color: var(--green);
+    background-color: var(--orange);
+}
+
+button.primary:hover, button.primary.outline {
+    background-color: transparent;
+    color: var(--orange);
+}
+
+/*endregion*/
+
+/*region Card*/
+
 .card {
     border: 3px solid var(--green);
     border-radius: 24px;
@@ -41,3 +85,5 @@ strong a, em a {
     overflow: hidden;
     text-align: center;
 }
+
+/*endregion*/
