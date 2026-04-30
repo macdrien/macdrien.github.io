@@ -19,3 +19,17 @@ h2, h3, h4, h5, h6 {
 h2 {
     font-size: 1.5em;
 }
+
+a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+strong, em {
+    color: var(--orange);
+}
+
+strong a, em a {
+    color: inherit;
+    text-decoration: underline;
+}
