@@ -33,14 +33,6 @@ header {
 .card {
   width: var(--card-width);
   margin-bottom: 20px;
-
-  display: flex;
-
-  border: 2px solid var(--green);
-  border-radius: 8px;
-  justify-content: space-between;
-
-  padding: 24px 12px;
 }
 
 .card .card-body {
@@ -49,6 +41,7 @@ header {
   flex-direction: column;
   gap: 20px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card .card-title {
