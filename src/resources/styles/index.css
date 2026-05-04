@@ -127,31 +127,9 @@ header {
   padding: 8px;
 }
 
-@media (min-width: 768px) {
-  body {
+@media screen and (min-width: 720px) {
+  .card.image {
     height: unset;
-    padding: 0;
-  }
-
-  h1 {
-    font-size: 3em;
-  }
-
-  h2 {
-    font-size: 2em;
-  }
-}
-
-@media (min-width: 1040px) {
-  .card-list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 20px;
-
-    margin: 0;
-    padding: 0 20px 20px 20px;
   }
 }
 
@@ -162,6 +140,10 @@ header {
 
   header {
     margin-bottom: 25px;
+  }
+
+  .card {
+    font-size: 18px;
   }
 
   .card-list {
@@ -189,6 +171,7 @@ header {
   }
 
   .card.image {
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 24px
@@ -209,8 +192,8 @@ header {
   }
 
   .card.icon img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
   }
 
   .card.icon .card-body {
