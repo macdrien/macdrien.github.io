@@ -119,14 +119,6 @@ button.tag {
 }
 
 @media screen and (min-width: 1080px) {
-  h1 {
-    font-size: 3em;
-  }
-
-  h2 {
-    font-size: 2em;
-  }
-
   .card {
     padding: 24px 32px;
     text-align: left;

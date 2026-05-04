@@ -80,6 +80,7 @@
   width: 60px;
   font-size: 1.2em;
   padding: 5px;
+  border-color: var(--orange);
 }
 
 @media (min-width: 1280px) {
