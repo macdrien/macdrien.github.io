@@ -34,6 +34,21 @@ strong a, em a {
     text-decoration: underline;
 }
 
+li {
+    list-style-type: none;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--green);
+}
+
+.icon use {
+    width: 100%;
+    height: 100%;
+}
+
 /*region Button */
 
 button {
@@ -72,6 +87,16 @@ button.primary, button.primary.outline {
 button.primary:hover, button.primary.outline {
     background-color: transparent;
     color: var(--orange);
+}
+
+button .icon,
+button.outline:hover .icon {
+    fill: var(--white);
+}
+
+button.outline .icon,
+button:hover .icon {
+    fill: var(--green);
 }
 
 /*endregion*/
