@@ -4,14 +4,9 @@
 
 body {
   height: 100vh;
-  /* fallback pour les navigateurs qui ne supportent pas dvh */
-  height: 100dvh;
-  /* utilise la hauteur dynamique du viewport sur mobile */
-  padding: 0 5px;
 }
 
 header {
-  width: 100%;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -21,7 +16,6 @@ header {
 /* Cards */
 
 .card-list {
-  margin: 0 calc((100vw - var(--card-width)) / 2);
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
@@ -84,14 +78,21 @@ header {
 }
 
 .card.icon {
+  height: unset;
   align-items: center;
   flex-direction: column;
-  height: var(--card-icon-height);
+  /* height: var(--card-icon-height); */
+}
+
+.card.icon .card-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .card.icon img {
-  height: 75px;
-  width: 75px;
+  height: 50px;
+  width: 50px;
 }
 
 .card.icon .card-body {
@@ -134,10 +135,6 @@ header {
 }
 
 @media (min-width: 1280px) {
-  body {
-    width: 100vw;
-  }
-
   header {
     margin-bottom: 25px;
   }
@@ -276,7 +273,7 @@ header {
   }
 
   .card-location {
-    grid-area: 2 / 8 / 6 / 9;
+    grid-area: 2 / 8 / 6 / 10;
   }
 
   .card.icon .card-body {
