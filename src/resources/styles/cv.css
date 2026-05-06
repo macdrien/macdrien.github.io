@@ -74,12 +74,11 @@ button.tag {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-  text-align: left;
+  font-weight: bold;
 }
 
 .tech-skills-list .main-tech {
   font-size: 1.1em;
-  font-weight: bold;
   color: var(--orange);
 }
 
