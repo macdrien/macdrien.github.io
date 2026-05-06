@@ -46,12 +46,12 @@ header {
 
 .card .card-title {
   font-size: 2em;
-  color: var(--primary);
+  color: var(--green);
 }
 
 .card p, .card p a {
   font-size: 1em;
-  color: var(--color);
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -61,9 +61,9 @@ header {
 }
 
 .card button:hover {
-  color: var(--primary);
-  background-color: var(--background);
-  border: 2px solid var(--primary);
+  color: var(--green);
+  background-color: var(--white);
+  border: 2px solid var(--green);
   transform: translate(1px, 1px);
 }
 

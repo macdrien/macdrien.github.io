@@ -5,7 +5,7 @@
 .menu {
   width: 70px;
   height: 70px;
-  background-color: var(--primary);
+  background-color: var(--green);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -63,12 +63,12 @@
 
 .menu-link, .menu-link:visited {
   text-decoration: none;
-  color: var(--background);
+  color: var(--white);
   font-size: 3em;
 }
 
 .menu-link:hover {
-  color: var(--secondary);
+  color: var(--orange);
 }
 
 #lang-switcher {
@@ -80,7 +80,15 @@
   width: 60px;
   font-size: 1.2em;
   padding: 5px;
-  border-color: var(--orange);
+  background-color: var(--orange-dark);
+  border-color: var(--orange-dark);
+  color: var(--green-dark);
+}
+
+#lang-switcher:hover {
+  background-color: transparent;
+  border-color: var(--orange-dark);
+  color: var(--orange-dark);
 }
 
 @media (min-width: 1280px) {

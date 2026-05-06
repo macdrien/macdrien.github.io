@@ -3,18 +3,14 @@
 
 :root {
   --white: #FFFFFF;
+  --black: #000000;
   /* Light colors are not used for now */
-  /*--green-light: #003d18c0;*/
-  --green: #003D18;
-  /*--orange-light: #ff600aa0;*/
+  --green-dark: #000f08;
+  --green: #004225;
+  --green-light: #007542;
+  --orange-dark: #d64b00;
   --orange: #FF600A;
-  --black: #181010;
-  --grey: #808080;
-
-  --background: var(--white);
-  --color: var(--black);
-  --primary: var(--green);
-  --secondary: var(--orange);
+  --orange-light: #ff813d;
 
   --card-width: 320px;
 
@@ -29,6 +25,6 @@
   font-family: "Geologica", "Roboto", sans-serif;
   font-style: normal;
 
-  background-color: var(--background);
-  color: var(--color);
+  background-color: var(--white);
+  color: var(--black);
 }
