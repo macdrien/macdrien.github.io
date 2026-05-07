@@ -107,7 +107,7 @@ button.tag {
 }
 
 .titles h5 {
-  color: var(--grey);
+  color: grey;
   font-weight: normal;
   font-style: italic;
 }
@@ -175,6 +175,9 @@ button.tag {
     border: none;
     display: block;
     text-align: left;
+    margin: 0 16px;
+    padding: 0;
+    border-radius: 0;
   }
 
   .tech-skills-list {
