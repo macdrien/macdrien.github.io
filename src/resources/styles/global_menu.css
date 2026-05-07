@@ -80,15 +80,15 @@
   width: 60px;
   font-size: 1.2em;
   padding: 5px;
-  background-color: var(--orange-dark);
-  border-color: var(--orange-dark);
-  color: var(--green-dark);
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: var(--black);
 }
 
 #lang-switcher:hover {
   background-color: transparent;
-  border-color: var(--orange-dark);
-  color: var(--orange-dark);
+  border-color: var(--orange);
+  color: var(--orange);
 }
 
 @media (min-width: 1280px) {
