@@ -4,6 +4,7 @@
     "personal": {
       "experience": {
         "uk": {
+          "location": "Totnes and Torquay, Devon, UK",
           "text": "Obtaining an engineering degree requires twelve weeks of international experience. Therefore, I went to work for three months, during the summer of 2019, at *Ace Printwear*, a small company in *Torquay* (Devon, UK), which customizes textiles by flocking, mainly for the many tourists of the English Riviera and local businesses. This experience allowed me to significantly improve my English level up to the B2 required for the degree.",
           "title": "Immersion in England"
         },
@@ -42,25 +43,25 @@
       "experience": {
         "viveris": {
           "company": "Viveris Technologies",
-          "date": "21 - ..",
+          "date": "2021 - Today",
           "job": "Software engineer",
           "text": "Since 2021, I work at *Viveris Technologies*. Based in Toulouse, I am a developer in an agile team. My tasks change from day to day, week to week, and sprint to sprint. My main skills remain web development, backend with a main API in *Spring*, and frontend with *VueJS* that we are introducing into the project. But I can also work on databases, networking, system administration and CI."
         },
         "iut-teacher": {
-          "company": "IUT ok Rodez",
-          "date": "03/2026",
+          "company": "IUT of Rodez",
+          "date": "march 2026",
           "job": "Part-time teacher",
           "text": "In march 2026, I had the opportunity to create and teach a course of *VueJS* to the students in 2nd year of BUT in Computer Science. This experience allowed me to reorder my knowledge to be able to present them to the students. I presented to them: 5 lectures of one hour each and 5 guided work of one hour and a quarter each. These lessons include 2 evaluations."
         },
         "eiffage": {
           "company": "Eiffage and UTBM",
-          "date": "18 - 21",
+          "date": "2018 - 2021",
           "job": "Engineering apprentice",
           "text": "From 2018 to 2021, I attended an engineering school in a work-study program. I worked at *Eiffage-Energie-Systèmes* and studied at *UTBM* (University of Technology of Belfort-Montbéliard). I worked in Mulhouse, Alsace, as a web developer with *Spring Boot* for the backend and *ReactJS* as the frontend framework. For my studies, my university was located in Belfort, near Mulhouse."
         },
         "dut": {
           "company": "IUT of Rodez",
-          "date": "16 - 18",
+          "date": "2016 - 2018",
           "job": "DUT Computer Sciences",
           "text": "I started my higher education with a DUT in Computer Science. I completed this degree from 2016 to 2018 at the IUT of Rodez (University Toulouse 1 Capitole). It allowed me to get a solid introduction to computer science, especially in *Java*. This training also gave me a strong foundation, particularly in relational databases."
         }
