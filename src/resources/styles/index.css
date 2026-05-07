@@ -200,6 +200,8 @@ header {
   .card.icon .card-body {
     align-items: center;
     text-align: center;
+    justify-content: space-between;
+    height: 100%;
   }
 
   .card.info {
@@ -273,7 +275,7 @@ header {
   }
 
   .card-email {
-    grid-area: 6 / 3 / 9 / 4;
+    grid-area: 6 / 2 / 9 / 4;
   }
 
   .card-calendly {
@@ -285,6 +287,12 @@ header {
   }
 
   .card.icon .card-body {
-    gap: 12px;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .card.image .card-body {
+    justify-content: center;
+    gap: 16px;
   }
 }
