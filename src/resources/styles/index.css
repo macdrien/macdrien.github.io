@@ -135,6 +135,10 @@ header {
 }
 
 @media (min-width: 1280px) {
+  body {
+    height: unset;
+  }
+
   header {
     margin-bottom: 25px;
   }
@@ -144,7 +148,7 @@ header {
   }
 
   .card-list {
-    height: calc(100vh - 190px);
+    height: 700px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr);
@@ -217,7 +221,7 @@ header {
   }
 
   .card-github {
-    grid-area: 6 / 4 / 11 / 6;
+    grid-area: 6 / 4 / 10 / 6;
   }
 
   .card-email {
@@ -225,11 +229,11 @@ header {
   }
 
   .card-calendly {
-    grid-area: 1 / 6 / 6 / 8;
+    grid-area: 2 / 6 / 6 / 8;
   }
 
   .card-location {
-    grid-area: 1 / 8 / 6 / 10;
+    grid-area: 2 / 8 / 6 / 11;
   }
 }
 
@@ -244,6 +248,10 @@ header {
 
   .card.image img {
     height: 90%;
+  }
+
+  .card-location {
+    grid-area: 2 / 8 / 6 / 10;
   }
 }
 
